@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> PROFILE </title>
+ 
+ <link href="profile.css" rel="stylesheet" type="text/css">
+ 
+ <style>
+ * {
+	box-sizing: border-box;
+}
+
+#videoBG {
+	 position: fixed;
+	 z-index: -1;	
+	 right: 0;
+	 bottom: 0;
+	 min-width: 100%;
+	 min-height: 100%;
+	 width: auto;
+	 height: auto;
+	 
+ }
+
+body {
+	margin: 0;
+	padding:0;
+	 background-image: url(https://i.pinimg.com/originals/a1/38/64/a13864df47ce0549ae2ad8e7d07a53a1.jpg);
+	
+	background-size: cover;
+	background-position: fixed;
+}
+
+ 
+ .main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: red;
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid blue;
+	 color: yellow;
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid blue;
+ }
+ 
+ 
+.row {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;	
+	
+}
+ .gallery {
+	margin: 5px;
+	border: 1px solid green;
+	float: left;
+	width: 390px;
+	position: relative;
+	background-color: #F7DB4F;
+ }
+ 
+ .gallery:hover {
+	border: 1px solid blue;
+ }
+
+ .gallery img {
+	width: 100%;
+	height: auto;
+ }
+ 
+ .desc {
+	padding: 15px;
+	text-align: center;
+	color:black;
+ }
+
+ .desc a {
+	color:#F7DB4F;
+ }
+
+
+ </style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="profile.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	</ul>
+   
+  </div>
+ 
+ <div class="container"> 
+   
+   <div class="gallery"> 
+	 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/377048/01/sv04/fnd/PHL/fmt/png/Softride-Enzo-Evo-Running-Shoes">
+     <div class="desc"> Softride Enzo Evo Running Shoes </div>
+	</div>
+	<div class="gallery"> 
+	 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/377048/02/sv04/fnd/PHL/fmt/png/Softride-Enzo-Evo-Running-Shoes">
+     <div class="desc"> Softride Enzo Evo Running Shoes </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/376676/06/sv05/fnd/PHL/fmt/png/Retaliate-2-Running-Shoes  ">
+     <div class="desc"> NMD_R1 X INDIGO HERZ SHOES </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/376814/11/fnd/PHL/fmt/png/Electrify-NITRO-2-Running-Shoes-Men">
+     <div class="desc"> Electrify NITRO 2 Running Shoes </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/376676/18/fnd/PHL/fmt/png/Retaliate-2-Running-Shoes">
+     <div class="desc"> Retaliate 2 Running Shoes </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/376325/02/fnd/PHL/fmt/png/Better-Enzo-2-Men's-Running-Shoes">
+     <div class="desc"> Better Enzo 2 Men's Running Shoes </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/376289/13/fnd/PHL/fmt/png/Twitch-Runner-Running-Shoes">
+		<div class="desc"> Twitch Runner Running Shoes </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/193733/05/fnd/PHL/fmt/png/SOFTRIDE-Rift-Men's-Running-Shoes">
+		<div class="desc"> SOFTRIDE Rift Men's Running Shoes</div>
+	   </div>
+	<div class="gallery"> 
+		<img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/192568/02/fnd/PHL/fmt/png/NRGY-Star-Running-Shoes">
+		<div class="desc"> NRGY Star Running Shoes </div>
+	   </div>   
+	   
+ </div>
+ </header>
+ <video id="videoBG" poster="mposter.PNG" autoplay muted loop play-inline>
+    <source src="CGI _ Puma Suede Shoe Ad _ 4K.mp4" type="video/mp4"> 
+
+ </body>
+
+</html>

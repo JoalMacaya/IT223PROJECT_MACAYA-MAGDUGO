@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> PROFILE </title>
+ 
+ <link href="profile.css" rel="stylesheet" type="text/css">
+ 
+ <style>
+ * {
+	box-sizing: border-box;
+}
+
+#videoBG {
+	 position: fixed;
+	 z-index: -1;	
+	 right: 0;
+	 bottom: 0;
+	 min-width: 100%;
+	 min-height: 100%;
+	 width: auto;
+	 height: auto;
+	 
+ }
+
+body {
+	margin: 0;
+	padding:0;
+	 background-image: url(https://i.pinimg.com/originals/a1/38/64/a13864df47ce0549ae2ad8e7d07a53a1.jpg);
+	
+	background-size: cover;
+	background-position: fixed;
+}
+
+ 
+ .main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: red;
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid blue;
+	 color: yellow;
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid blue;
+ }
+ 
+ 
+.row {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;	
+	
+}
+ .gallery {
+	margin: 5px;
+	border: 1px solid green;
+	float: left;
+	width: 390px;
+	position: relative;
+	background-color: #F7DB4F;
+ }
+ 
+ .gallery:hover {
+	border: 1px solid blue;
+ }
+
+ .gallery img {
+	width: 100%;
+	height: auto;
+ }
+ 
+ .desc {
+	padding: 15px;
+	text-align: center;
+	color:black;
+ }
+
+ .desc a {
+	color:#F7DB4F;
+ }
+
+
+ </style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="profile.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	</ul>
+   
+  </div>
+ 
+ <div class="container"> 
+   
+   <div class="gallery"> 
+	 <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2005fa7c-c506-43f1-9448-a985c8cad07a/air-jordan-1-mid-shoes-SQf7DM.png">
+     <div class="desc"> AIR JORDAN 1 MID </div>
+	</div>
+	<div class="gallery"> 
+	 <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5bf63082-0f5d-43a1-b51a-d1403eb24dce/jordan-one-take-4-pf-shoes-cdsVn1.png">
+     <div class="desc"> JORDAN ONE TAKE 4</div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4c92e877-8edf-4eac-9a9b-4ab5d613c4ce/jordan-stay-loyal-2-shoes-sDkgDk.png">
+     <div class="desc"> JORDAN STAY LOYAL 2 </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f47c90ea-a705-464d-b8ae-61bfc621713f/air-max-ltd-3-shoe-3X870s.png">
+     <div class="desc"> AIR MAX LTD 3 </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f1dd73bf-63a4-4cc9-8e10-285c5881f247/air-max-plus-mercurial-25-shoes-KHhJBV.png">
+     <div class="desc"> AIR MAX PLUS MERCURIAL 25 </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f983a76c-af61-4ef0-9b9e-7c434bee07dc/blazer-low-77-shoes-zHbZKq.png">
+     <div class="desc"> NIKE BLAZER LOW 77 </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2ed73ce2-b0d0-4806-bb97-0981a8977369/air-max-270-shoes-g3G7Fd.png">
+		<div class="desc"> AIR MAX 270 </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b3a6c290-0574-4a69-9e1e-652432d17668/e-series-1-shoes-j57hxR.png">
+		<div class="desc"> e-series 1 </div>
+	   </div>
+	<div class="gallery"> 
+		<img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b79bbe55-f9e1-43f1-89fe-45e19c8bb685/air-max-97-shoe-EBZrb8.png">
+		<div class="desc"> AIR MAX 90 </div>
+	   </div>   
+	   
+ </div>
+ </header>
+ <video id="videoBG" poster="mposter.PNG" autoplay muted loop play-inline>
+    <source src="Nike Air Max 270 - Animation.mp4" type="video/mp4"> 
+
+ </body>
+
+</html>

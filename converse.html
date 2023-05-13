@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> PROFILE </title>
+ 
+ <link href="profile.css" rel="stylesheet" type="text/css">
+ 
+ <style>
+ * {
+	box-sizing: border-box;
+}
+
+#videoBG {
+	 position: fixed;
+	 z-index: -1;	
+	 right: 0;
+	 bottom: 0;
+	 min-width: 100%;
+	 min-height: 100%;
+	 width: auto;
+	 height: auto;
+	 
+ }
+
+body {
+	margin: 0;
+	padding:0;
+	 background-image: url(https://i.pinimg.com/originals/a1/38/64/a13864df47ce0549ae2ad8e7d07a53a1.jpg);
+	
+	background-size: cover;
+	background-position: fixed;
+}
+
+ 
+ .main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: red;
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid blue;
+	 color: yellow;
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid blue;
+ }
+ 
+ 
+.row {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;	
+	
+}
+ .gallery {
+	margin: 5px;
+	border: 1px solid green;
+	float: left;
+	width: 390px;
+	position: relative;
+	background-color: #F7DB4F;
+ }
+ 
+ .gallery:hover {
+	border: 1px solid blue;
+ }
+
+ .gallery img {
+	width: 100%;
+	height: auto;
+ }
+ 
+ .desc {
+	padding: 15px;
+	text-align: center;
+	color:black;
+ }
+
+ .desc a {
+	color:#F7DB4F;
+ }
+
+
+ </style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="profile.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	</ul>
+   
+  </div>
+ 
+ <div class="container"> 
+   
+   <div class="gallery"> 
+	 <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw2cd23f8a/images/e_08/A05029C_E_08X1.jpg?sw=406">
+     <div class="desc"> CHUCK TAYLOR ALL STAR MALDEN STREET </div>
+	</div>
+	<div class="gallery"> 
+	 <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwd870043e/images/f_08/A06835C_F_08X1.jpg?sw=406">
+     <div class="desc"> CHUCK 70 FINAL CLUB</div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwe3ef7cea/images/d_08/A06838C_D_08X1.jpg?sw=406">
+     <div class="desc"> CHUCK 70 CRAFTWORK </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw28126a76/images/d_08/166247C_D_08X1.jpg?sw=406">
+     <div class="desc"> CONS FASTBREAK PRO LEATHER </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw7c1d91da/images/d_08/169646C_D_08X1.jpg?sw=406">
+     <div class="desc"> CONS FASTBREAK </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwca735d5f/images/d_08/A05336C_D_08X1.jpg?sw=406">
+     <div class="desc"> CONS FASTBREAK PRO ALLTIMERS </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwbc7f964d/images/e_08/A03463C_E_08X1.jpg?sw=406">
+		<div class="desc"> CHUCK TAYLOR CX SPRAY PAINT </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwdae496e9/images/f_08/A06837C_F_08X1.jpg?sw=406">
+		<div class="desc"> CHUCK TAYLOR PATHWORK</div>
+	   </div>
+	<div class="gallery"> 
+		<img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw587a2418/images/e_08/A02410C_E_08X1.jpg?sw=406">
+		<div class="desc"> CHUCK TAYLOR EXPLORE </div>
+	   </div>   
+	   
+ </div>
+ </header>
+ <video id="videoBG" poster="mposter.PNG" autoplay muted loop play-inline>
+    <source src="Living In Color- A Converse Commercial.mp4" type="video/mp4"> 
+
+ </body>
+
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> PROFILE </title>
+ 
+ <link href="profile.css" rel="stylesheet" type="text/css">
+ 
+ <style>
+ * {
+	box-sizing: border-box;
+}
+
+#videoBG {
+	 position: fixed;
+	 z-index: -1;	
+	 right: 0;
+	 bottom: 0;
+	 min-width: 100%;
+	 min-height: 100%;
+	 width: auto;
+	 height: auto;
+	 
+ }
+
+body {
+	margin: 0;
+	padding:0;
+	 background-image: url(https://i.pinimg.com/originals/a1/38/64/a13864df47ce0549ae2ad8e7d07a53a1.jpg);
+	
+	background-size: cover;
+	background-position: fixed;
+}
+
+ 
+ .main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: red;
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid blue;
+	 color: yellow;
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid blue;
+ }
+ 
+ 
+.row {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;	
+	
+}
+ .gallery {
+	margin: 5px;
+	border: 1px solid green;
+	float: left;
+	width: 390px;
+	position: relative;
+	background-color: #F7DB4F;
+ }
+ 
+ .gallery:hover {
+	border: 1px solid blue;
+ }
+
+ .gallery img {
+	width: 100%;
+	height: auto;
+ }
+ 
+ .desc {
+	padding: 15px;
+	text-align: center;
+	color:black;
+ }
+
+ .desc a {
+	color:#F7DB4F;
+ }
+
+
+ </style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="profile.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	</ul>
+   
+  </div>
+ 
+ <div class="container"> 
+   
+   <div class="gallery"> 
+	 <img src="https://images.vans.com/is/image/Vans/VN000D5I_NVY_ALT1?hei=612&wid=492&qlt=50&resMode=sharp2&op_sum=0.9,1.0,8,0">
+     <div class="desc"> SK8-HIGH </div>
+	</div>
+	<div class="gallery"> 
+	 <img src="https://images.vans.com/is/image/Vans/VN0A3D29_OIU_ALT1?hei=612&wid=492&qlt=50&resMode=sharp2&op_sum=0.9,1.0,8,0">
+     <div class="desc"> OLD SKOOL V </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://images.vans.com/is/image/Vans/VN0A4U1K_WHT_ALT1?hei=612&wid=492&qlt=50&resMode=sharp2&op_sum=0.9,1.0,8,0">
+     <div class="desc"> ULTRA RANGE EXO </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://images.vans.com/is/image/Vans/VN0A7Q5D_Y28_HERO?hei=612&wid=492&qlt=50&resMode=sharp2&op_sum=0.9,1.0,8,0">
+     <div class="desc"> FRUIT SKULL CLASSIC SLIP-ON </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://images.vans.com/is/image/Vans/VN0A7Q58_MCG_HERO?hei=612&wid=492&qlt=50&resMode=sharp2&op_sum=0.9,1.0,8,0">
+     <div class="desc"> ANAHEIM FACTORY CLASSIC 98 </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://images.vans.com/is/image/Vans/VN0A7Q5D_OLV_HERO?hei=612&wid=492&qlt=50&resMode=sharp2&op_sum=0.9,1.0,8,0">
+     <div class="desc"> GEO TREK CLASSIC </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://images.vans.com/is/image/Vans/VN0005V0_MCG_HERO?hei=612&wid=492&qlt=50&resMode=sharp2&op_sum=0.9,1.0,8,0">
+		<div class="desc"> VANS X FAIRDALE BMX SK8-HI </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://images.vans.com/is/image/Vans/VN0007NS_0FI_HERO?hei=612&wid=492&qlt=50&resMode=sharp2&op_sum=0.9,1.0,8,0">
+		<div class="desc"> RIPSTOP CANVAS SK8-HI</div>
+	   </div>
+	<div class="gallery"> 
+		<img src="https://images.vans.com/is/image/Vans/VN0A5KRU_BS5_HERO?hei=612&wid=492&qlt=50&resMode=sharp2&op_sum=0.9,1.0,8,0">
+		<div class="desc"> PASTEL BLOCK SK8-HI </div>
+	   </div>   
+	   
+ </div>
+ </header>
+ <video id="videoBG" poster="mposter.PNG" autoplay muted loop play-inline>
+    <source src="videoplayback.mp4" type="video/mp4"> 
+
+ </body>
+
+</html>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> PROFILE </title>
+ 
+ <link href="profile.css" rel="stylesheet" type="text/css">
+ 
+ <style>
+ * {
+	box-sizing: border-box;
+}
+
+#videoBG {
+	 position: fixed;
+	 z-index: -1;	
+	 right: 0;
+	 bottom: 0;
+	 min-width: 100%;
+	 min-height: 100%;
+	 width: auto;
+	 height: auto;
+	 
+ }
+
+body {
+	margin: 0;
+	padding:0;
+	 background-image: url(https://i.pinimg.com/originals/a1/38/64/a13864df47ce0549ae2ad8e7d07a53a1.jpg);
+	
+	background-size: cover;
+	background-position: fixed;
+}
+
+ 
+ .main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: red;
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid blue;
+	 color: yellow;
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid blue;
+ }
+ 
+ 
+.row {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;	
+	
+}
+ .gallery {
+	margin: 5px;
+	border: 1px solid green;
+	float: left;
+	width: 390px;
+	position: relative;
+	background-image: url("https://thumbs.dreamstime.com/z/sneaker-shoe-seamless-pattern-canvas-doodle-vector-isolated-wallpaper-background-red-blue-sneaker-shoe-seamless-pattern-canvas-113541285.jpg");
+ }
+ 
+ .gallery:hover {
+	border: 1px solid blue;
+ }
+
+ .gallery img {
+	width: 100%;
+	height: auto;
+ }
+ 
+ .desc {
+	padding: 15px;
+	text-align: center;
+	color:#f7d706;
+ }
+
+ .desc a {
+	color:#F7DB4F;
+ }
+
+
+ </style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="profile.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	 <li> <a href="about.html"> BLOG </a></li>
+	</ul>
+   
+  </div>
+ 
+ <div class="container"> 
+   
+   <div class="gallery"> 
+	 <img src="https://i.ebayimg.com/images/g/Y~kAAOSwROFjoT4C/s-l500.jpg">
+	  <div class="desc"> 
+		<a href="https://www.newbalance.com/480/"> NEW BALANCE </a></div>
+    
+	</div>
+	<div class="gallery"> 
+	 <img src="https://image.goat.com/attachments/product_outer_pictures/images/072/606/057/square/temp1653352949.jpeg?1653352950">
+     <div class="desc"> NIKE </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://i.ebayimg.com/images/g/0HMAAOSwnsljutiq/s-l500.jpg">
+     <div class="desc"> VANS </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://m.media-amazon.com/images/I/810H5d+UKNL._UX395_.jpg">
+     <div class="desc"> CONVERSE </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://di2ponv0v5otw.cloudfront.net/posts/2022/03/20/62377b5109d760a7fa694f45/s_62377b903a0db95a996ea88c.jpg">
+     <div class="desc"> ADIDAS</div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//108/MTA-68942916/oem_oem_full01.jpg">
+     <div class="desc"> PUMA </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//108/MTA-68942916/oem_oem_full01.jpg">
+		<div class="desc"> PUMA </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//108/MTA-68942916/oem_oem_full01.jpg">
+		<div class="desc"> PUMA </div>
+	   </div>
+	<div class="gallery"> 
+		<img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//108/MTA-68942916/oem_oem_full01.jpg">
+		<div class="desc"> PUMA </div>
+	   </div>   
+	   
+ </div>
+ </header>
+ <video id="videoBG" poster="mposter.PNG" autoplay muted loop play-inline>
+    <source src="WEB.mp4" type="video/mp4"> 
+
+ </body>
+
+</html>

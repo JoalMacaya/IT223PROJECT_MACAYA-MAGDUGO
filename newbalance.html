@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> NEW BALANCE</title>
+ 
+ <link href="profile.css" rel="stylesheet" type="text/css">
+ 
+ <style>
+ * {
+	box-sizing: border-box;
+}
+
+#videoBG {
+	 position: fixed;
+	 z-index: -1;	
+	 right: 0;
+	 bottom: 0;
+	 min-width: 100%;
+	 min-height: 100%;
+	 width: auto;
+	 height: auto;
+	 
+ }
+
+body {
+	margin: 0;
+	padding:0;
+	background-size: cover;
+	background-position: fixed;
+}
+
+ 
+ .main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: red;
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid blue;
+	 color: yellow;
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid blue;
+ }
+ 
+ 
+.row {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;	
+	
+}
+ .gallery {
+	margin: 5px;
+	border: 1px solid green;
+	float: left;
+	width: 390px;
+	position: relative;
+	background-color: #F7DB4F;
+ }
+ 
+ .gallery:hover {
+	border: 1px solid blue;
+ }
+
+ .gallery img {
+	width: 100%;
+	height: auto;
+ }
+ 
+ .desc {
+	padding: 15px;
+	text-align: center;
+	color:black;
+ }
+
+ .desc a {
+	color:#F7DB4F;
+ }
+
+
+ </style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="profile.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	</ul>
+   
+  </div>
+ 
+ <div class="container"> 
+   
+   <div class="gallery"> 
+	 <img src="https://nb.scene7.com/is/image/NB/bb480lbt_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440">
+     <div class="desc"> 480 </div>
+	</div>
+	<div class="gallery"> 
+	 <img src="https://nb.scene7.com/is/image/NB/ml574evb_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+     <div class="desc"> 547 CORE </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://nb.scene7.com/is/image/NB/m108012n_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+     <div class="desc"> FRESH FOAM X 1080v12 </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://nb.scene7.com/is/image/NB/mr993gl_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440">
+     <div class="desc"> 993 CORE </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://nb.scene7.com/is/image/NB/mw928bk3_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440">
+     <div class="desc"> 928v3 </div>
+	</div>
+  <div class="gallery"> 
+	 <img src="https://nb.scene7.com/is/image/NB/bb550lsc_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+     <div class="desc"> 550 </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://nb.scene7.com/is/image/NB/m990bb3_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440">
+		<div class="desc"> 990 </div>
+	</div>
+	<div class="gallery"> 
+		<img src="https://nb.scene7.com/is/image/NB/m1540bk3_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+		<div class="desc"> 1540v3 </div>
+	   </div>
+	<div class="gallery"> 
+		<img src="https://nb.scene7.com/is/image/NB/mmorch4_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+		<div class="desc"> FRESH X MORE v4 </div>
+	   </div>   
+	   
+ </div>
+ </header>
+ <video id="videoBG" poster="mposter.PNG" autoplay muted loop play-inline>
+    <source src="WEB.mp4" type="video/mp4"> 
+
+ </body>
+
+</html>
