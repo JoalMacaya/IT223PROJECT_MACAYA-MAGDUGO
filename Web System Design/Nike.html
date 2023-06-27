@@ -1,0 +1,530 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Index.css">
+ <title>Nike</title>
+
+
+ <style>
+	* {
+	   box-sizing: border-box;
+   }
+   
+   
+   body {
+	   margin: 0;
+	   padding:0;
+   }
+   
+	
+   .main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+
+	
+	 
+ }
+ 
+ .main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: rgb(236, 83, 83);
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid rgb(236, 83, 83);
+	 color: rgb(236, 83, 83);
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid rgb(236, 83, 83);
+	 
+ }
+
+ .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 160px;
+  justify-content: space-between;
+  
+}
+
+.navbar-toggle span {
+  display: flex;
+  width: 25px;
+  height: 3px;
+  background-color: #c11111;
+  margin-bottom: 5px;
+
+}
+ 
+ @media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    float: right;
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(2),
+  .navbar-toggle.active span:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(1),
+  .navbar-toggle.active span:nth-child(4) {
+    opacity: 0;
+  }
+
+  .main-nav.active {
+    display: inline-block;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    align-items: center;
+  }
+
+  .main-nav.active li {
+    margin: 10px 0;
+  }
+  .footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+ 
+	
+   .row {
+	   margin: auto;
+	   overflow: auto;
+	   background-color: black;
+	   padding: 10px;
+   }
+   
+   
+   .container {
+	   max-width: 1200px;
+	   margin: auto;
+	   overflow: auto;	
+	   
+   }
+	.gallery {
+	   margin: 5px;
+	   border: 1px solid black;
+	   float: left;
+	   width: 390px;
+	   position: relative;
+	   background-color: black;
+	}
+	
+	.gallery:hover {
+	   border: 1px solid rgb(236, 83, 83);
+	}
+   
+	.gallery img {
+	   width: 100%;
+	   height: auto;
+	}
+	
+	.desc {
+	   padding: 15px;
+	   text-align: center;
+	   color:white;
+	}
+   
+	.desc a {
+	   color:black;
+	}
+   
+	#btn-one {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	background-color: black;
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.btn-two {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#btn-one {
+	margin-right: 10px;
+}
+
+.btn-two {
+	margin-right: 0;
+}
+
+#btn-one:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+
+   .btn-two:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+
+   .footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+   .image {
+  float: left;
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+p {
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+}
+   
+	</style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+	<img src="logo.jpg" class="image">
+   
+	<ul class="main-nav"> 
+		
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="Nike.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	 <li> <a href="contact-us.html"> CONTACT US </a></li>
+	 <li><a href="item.html">MY CART</a></li>
+	</ul>
+   
+ 
+  <div class="navbar-toggle">
+	<span></span>
+	<span></span>
+	<span></span>
+  </div>
+</div>
+  <div class="container"> 
+   
+	<div class="container"> 
+		<div class="gallery"> 
+			<img id="myImage1" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2005fa7c-c506-43f1-9448-a985c8cad07a/air-jordan-1-mid-shoes-SQf7DM.png">
+			<div class="desc"> AIR JORDAN 1 MID </div>
+			<p>₱5,000</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('AIR JORDAN 1 MID', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('AIR JORDAN 1 MID', 5000, 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2005fa7c-c506-43f1-9448-a985c8cad07a/air-jordan-1-mid-shoes-SQf7DM.png')">ADD TO CART</a>
+		</div>
+		  
+		<div class="gallery"> 
+			<img id="myImage2" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5bf63082-0f5d-43a1-b51a-d1403eb24dce/jordan-one-take-4-pf-shoes-cdsVn1.png">
+			<div class="desc"> JORDAN ONE TAKE 4 </div>
+			<p>₱5,800</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('JORDAN ONE TAKE 4', 5800)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('JORDAN ONE TAKE 4', 5800, 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5bf63082-0f5d-43a1-b51a-d1403eb24dce/jordan-one-take-4-pf-shoes-cdsVn1.png')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage3" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4c92e877-8edf-4eac-9a9b-4ab5d613c4ce/jordan-stay-loyal-2-shoes-sDkgDk.png">
+			<div class="desc"> JORDAN STAY LOYAL 2 </div>
+			<p>₱6,700</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('JORDAN STAY LOYAL 2', 6700)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('JORDAN STAY LOYAL 2', 6700, 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4c92e877-8edf-4eac-9a9b-4ab5d613c4ce/jordan-stay-loyal-2-shoes-sDkgDk.png')">ADD TO CART</a>
+		</div>
+		  
+		<div class="gallery"> 
+			<img id="myImage4" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f47c90ea-a705-464d-b8ae-61bfc621713f/air-max-ltd-3-shoe-3X870s.png">
+			<div class="desc"> AIR MAX LTD 3 </div>
+			<p>₱4,800</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('AIR MAX LTD 3', 4800)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('AIR MAX LTD 3', 4800, 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f47c90ea-a705-464d-b8ae-61bfc621713f/air-max-ltd-3-shoe-3X870s.png')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage5" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f1dd73bf-63a4-4cc9-8e10-285c5881f247/air-max-plus-mercurial-25-shoes-KHhJBV.png">
+			<div class="desc"> AIR MAX PLUS MERCURIAL 25 </div>
+			<p>₱6,300</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('AIR MAX PLUS MERCURIAL 25', 6300)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('AIR MAX PLUS MERCURIAL 25', 6300, 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f1dd73bf-63a4-4cc9-8e10-285c5881f247/air-max-plus-mercurial-25-shoes-KHhJBV.png')">ADD TO CART</a>
+		</div>
+		  
+		<div class="gallery"> 
+			<img id="myImage6" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f983a76c-af61-4ef0-9b9e-7c434bee07dc/blazer-low-77-shoes-zHbZKq.png">
+			<div class="desc">  NIKE BLAZER LOW 77 </div>
+			<p>₱7,500</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel(' NIKE BLAZER LOW 77', 7500)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('NIKE BLAZER LOW 77', 7500, 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f983a76c-af61-4ef0-9b9e-7c434bee07dc/blazer-low-77-shoes-zHbZKq.png')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage7" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2ed73ce2-b0d0-4806-bb97-0981a8977369/air-max-270-shoes-g3G7Fd.png">
+			<div class="desc">  AIR MAX 270 </div>
+			<p>₱5,400</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('AIR MAX 270', 5400)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('AIR MAX 270', 5400, 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2ed73ce2-b0d0-4806-bb97-0981a8977369/air-max-270-shoes-g3G7Fd.png')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage8" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b3a6c290-0574-4a69-9e1e-652432d17668/e-series-1-shoes-j57hxR.png">
+			<div class="desc"> E-SERIES 1 </div>
+			<p>₱6,000</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('E-SERIES 1', 6000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('E-SERIES 1', 6000, 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b3a6c290-0574-4a69-9e1e-652432d17668/e-series-1-shoes-j57hxR.png')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage9" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b79bbe55-f9e1-43f1-89fe-45e19c8bb685/air-max-97-shoe-EBZrb8.png">
+			<div class="desc"> AIR MAX 90 </div>
+			<p>₱4,500</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('AIR MAX 90', 4500)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('AIR MAX 90', 4500, 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b79bbe55-f9e1-43f1-89fe-45e19c8bb685/air-max-97-shoe-EBZrb8.png')">ADD TO CART</a>
+		</div>
+		</div> 
+ 
+ </div>
+ </header>
+ <script>
+	function buyOrCancel(productName, price, imageUrl) {
+            var confirmation = confirm("Are you sure you want to proceed with the purchase?");
+            if (confirmation) {
+                alert("Buying success! Product: " + productName + ", Price: " + price);
+            } else {
+                alert("Purchase canceled.");
+            }
+        }
+		function addToCart(productName, price, imageUrl) {
+    var confirmation = confirm("Are you sure you want to add this item to the cart?");
+    if (confirmation) {
+        // Perform the necessary actions to add the item to the cart
+        alert("Item added to the cart successfully!");
+
+        var cartItem = { productName: productName, price: price, imageUrl: imageUrl };
+        var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        cartItems.push(cartItem);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    } else {
+        // Handle the cancellation or any other logic you want
+        alert("Add to Cart cancelled.");
+    }
+}
+var image = document.getElementById('myImage1');
+image.setAttribute('data-original-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2fb8a3f3-85d5-4be1-b869-93659d64df11/air-jordan-1-mid-mens-shoes-b3js2D.png');
+image.setAttribute('data-hover-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/57a172a7-2dab-4275-9870-9d0a3db6b462/air-jordan-1-mid-shoes-SQf7DM.png');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage2');
+image.setAttribute('data-original-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7c6d2fe1-bc70-4cbd-9b90-4febdaf38c0b/jordan-one-take-4-pf-shoes-cdsVn1.png');
+image.setAttribute('data-hover-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/89c83d89-84bf-434c-9d8a-59b25b4cead1/jordan-one-take-4-pf-shoes-cdsVn1.png');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage3');
+image.setAttribute('data-original-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/edb101ea-7e82-46f0-ae57-efcd17db5eaf/jordan-stay-loyal-2-big-kids-shoes-NjNC0T.png');
+image.setAttribute('data-hover-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/742f2d3a-32fa-4dbe-9f5b-fed487d97fdc/jordan-stay-loyal-2-shoes-sDkgDk.png');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage4');
+image.setAttribute('data-original-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c6d8acef-cdde-4b49-b50c-e61a4c226218/air-max-ltd-3-shoe-3X870s.png');
+image.setAttribute('data-hover-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/028a2523-57f8-4c84-8356-0a6d965aebea/air-max-ltd-3-shoe-3X870s.png');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage5');
+image.setAttribute('data-original-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c6704e32-5a7f-407d-bcd7-ae0b31d98791/air-max-plus-mercurial-25-shoes-KHhJBV.png');
+image.setAttribute('data-hover-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4c4ea0c2-a5bc-4837-b65f-d37cd3de6dd3/air-max-plus-mercurial-25-shoes-KHhJBV.png');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage6');
+image.setAttribute('data-original-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/34133bc1-d861-4319-8037-76bb1cce5f41/blazer-low-77-shoes-zHbZKq.png');
+image.setAttribute('data-hover-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dd27713d-cb90-4c75-a061-e8638b73c8cc/blazer-low-77-shoes-zHbZKq.png	');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage7');
+image.setAttribute('data-original-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/08de128a-b6c9-4543-8339-cdf0281ab95a/air-max-270-shoes-g3G7Fd.png');
+image.setAttribute('data-hover-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ff29efe9-69f4-4047-9aa3-b944183953f0/air-max-270-shoes-g3G7Fd.png');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage8');
+image.setAttribute('data-original-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ea519ef-960a-4b4a-9a93-a48fd6351da4/e-series-1-shoes-j57hxR.png');
+image.setAttribute('data-hover-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cc84d9c3-6d4f-48f2-afb7-9eb0883dc750/e-series-1-shoes-j57hxR.png');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage9');
+image.setAttribute('data-original-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ce3c5f4a-eae5-45ac-a7a4-4894a6525313/air-max-90-futura-shoes-SLTPS0.png');
+image.setAttribute('data-hover-src', 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f8dcdd8f-9183-47c2-89cb-d7944cfcdb2f/air-max-90-futura-shoes-SLTPS0.png');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+	document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+function myFunction() {
+  console.log("Clicked Buy now!");
+}
+ </script>
+ </body>
+ <footer>
+	<div class="footer">
+	<div class="row">
+	<a href="https://www.facebook.com/gilluther.magdugo.7/"><i class="fa fa-facebook"></i></a>
+	<a href="https://www.instagram.com/joal_macs/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR2W3TcAWx3iOT6OZfmHhKasAoQ3hCk2VZc2sTFjCxE2pzHNaU-keFsgzZ4"><i class="fa fa-instagram"></i></a>
+	<a href="https://twitter.com/kingluthluth?t=QHGNn7Vep193tbEO8KTHFQ&s=09&fbclid=IwAR3TmUnkp1Ig4uYi4MrDhiLlvn1JPH0zNQYW_N75F7GduuSyZGtYGMJXV9M"><i class="fa fa-twitter"></i></a>
+	</div>
+		
+	<div class="row">
+	SHOELAB Copyright © 2023 Shoelab - All rights reserved || Designed By: Joal and Luther 
+	</div>
+	</div>
+	</footer>
+</html>

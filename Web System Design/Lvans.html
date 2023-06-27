@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+ <title> Limited Edited: Vans</title>
+ 
+ <style>
+	* {
+	   box-sizing: border-box;
+   }
+   
+   
+   body {
+	margin: 0;
+	padding:0;
+}
+
+	
+.main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: rgb(236, 83, 83);
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid rgb(236, 83, 83);
+	 color: rgb(236, 83, 83);
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid rgb(236, 83, 83);
+	 
+ }
+
+ .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 160px;
+  float: right;
+}
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #c11111;
+  margin-bottom: 5px;
+}
+ 
+ @media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    float: right;
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(2),
+  .navbar-toggle.active span:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(1),
+  .navbar-toggle.active span:nth-child(4) {
+    opacity: 0;
+  }
+
+  .main-nav.active {
+    display: inline-block;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    align-items: center;
+  }
+
+  .main-nav.active li {
+    margin: 10px 0;
+  }
+  .footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+ 
+   h1{
+	color:rgb(249, 31, 7);
+	font-family: sans-serif;
+   }
+	
+   .row {
+	   margin: auto;
+	   overflow: auto;
+	   background-color: black;
+	   padding: 10px;
+   }
+   
+   
+   .container {
+	   max-width: 1200px;
+	   margin: auto;
+	   overflow: auto;	
+	   
+   }
+	.gallery {
+	   margin: 5px;
+	   border: 1px solid black;
+	   float: left;
+	   width: 390px;
+	   position: relative;
+	   background-color: black;
+	}
+	
+	.gallery:hover {
+	   border: 1px solid rgb(236, 83, 83);
+	}
+   
+	.gallery img {
+	   width: 100%;
+	   height: auto;
+	}
+	
+	.desc {
+	   padding: 15px;
+	   text-align: center;
+	   color:gold;
+	}
+   
+	.desc a {
+	   color:black;
+	}
+	#btn-one {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	background-color: black;
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.btn-two {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#btn-one {
+	margin-right: 10px;
+}
+
+.btn-two {
+	margin-right: 0;
+}
+
+#btn-one:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+
+   .btn-two:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+   .footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+p {
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+}
+
+.title {
+	text-align: center;
+}
+
+.image {
+  float: left;
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+.category-button {
+   background-color: #000000;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   margin: 5px;
+   cursor: pointer;
+ }
+
+ .category-button:hover {
+   background-color: #ef0909;
+   transition: background-color 0.3s ease-in-out;
+ }
+
+ .category-buttons {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ p {
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+}
+   
+	</style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+	<img src="logo.jpg" class="image">
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="products.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	 <li> <a href="contact-us.html"> CONTACT US </a></li>
+	 <li><a href="item.html">MY CART</a></li>
+	</ul>
+   
+  
+  <div class="navbar-toggle">
+	<span></span>
+	<span></span>
+	<span></span>
+  </div>
+</div>
+
+  <div class="title">
+	<h1>ALL LIMITED EDITION SNEAKERS</h1>
+  </div>
+ 
+ <div class="container"> 
+	<div class="category-buttons">
+		<a href="Lnew.html" class="category-button">New Balance</a>
+		<a href="Nnew.html" class="category-button">Nike</a>
+		<a href="Lvans.html" class="category-button">Vans</a>
+		<a href="Lconv.html" class="category-button">Converse</a>
+		<a href="Ladi.html" class="category-button">Adidas</a>
+		<a href="Lpuma.html" class="category-button">Puma</a>
+	  </div>
+   
+   <div class="gallery"> 
+	 <img id="myImage1" src="https://cdn.shopify.com/s/files/1/0099/5232/9785/files/VN0A54F6YJ7-2_600x.png?v=1686282018">
+     <div class="desc"> SESAME STREET  'OSCAR THE GROUCH'  </div>
+	 <button id="btn-one" onclick="buyOrCancel('Softride Enzo Evo Running Shoes', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Softride Enzo Evo Running Shoes', 5000, 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/377048/01/sv04/fnd/PHL/fmt/png/Softride-Enzo-Evo-Running-Shoes')">ADD TO CART</a>
+	</div>
+	<div class="gallery"> 
+	 <img id="myImage2" src="https://cdn.shopify.com/s/files/1/0099/5232/9785/files/VN0001R1GI6-4_600x.png?v=1684313347">
+     <div class="desc"> OLD SKOOL ' GUM SOLE' </div>
+	 <button id="btn-one" onclick="buyOrCancel('Softride Enzo Evo Running Shoes', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Softride Enzo Evo Running Shoes', 5000, 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/377048/01/sv04/fnd/PHL/fmt/png/Softride-Enzo-Evo-Running-Shoes')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage3" src="https://cdn.shopify.com/s/files/1/0099/5232/9785/files/VN000D5IBMB-2_600x.png?v=1686131305">
+     <div class="desc"> SESAME STREET SK8-HI 'MULTI' </div>
+	 <button id="btn-one" onclick="buyOrCancel('Softride Enzo Evo Running Shoes', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Softride Enzo Evo Running Shoes', 5000, 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/377048/01/sv04/fnd/PHL/fmt/png/Softride-Enzo-Evo-Running-Shoes')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage4" src="https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0007NS448-2_600x.png?v=1667803387">
+     <div class="desc"> ONE PIECE SK8-HI 'PUNK HAZARD' </div>
+	 <button id="btn-one" onclick="buyOrCancel('Softride Enzo Evo Running Shoes', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Softride Enzo Evo Running Shoes', 5000, 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/377048/01/sv04/fnd/PHL/fmt/png/Softride-Enzo-Evo-Running-Shoes')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage5" src="https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0007NZBLK-1_600x.png?v=1675061590">
+     <div class="desc"> SK8-HI REISSUE 'YEAR OF THE RABBIT' </div>
+	 <button id="btn-one" onclick="buyOrCancel('Softride Enzo Evo Running Shoes', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Softride Enzo Evo Running Shoes', 5000, 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/377048/01/sv04/fnd/PHL/fmt/png/Softride-Enzo-Evo-Running-Shoes')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage6" src="https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A5JMJY23-5_600x.jpg?v=1657705048">
+     <div class="desc"> MOONEYES SK8-HI 'BLACK YELLOW'  </div>
+	 <button id="btn-one" onclick="buyOrCancel('Softride Enzo Evo Running Shoes', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Softride Enzo Evo Running Shoes', 5000, 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/377048/01/sv04/fnd/PHL/fmt/png/Softride-Enzo-Evo-Running-Shoes')">ADD TO CART</a>
+	</div>
+	<div class="gallery"> 
+		<img id="myImage7" src="https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A4BX1BML-3_600x.jpg?v=1657686980">
+		<div class="desc"> THE LIZZIE 'CHECKERBOARD' </div>
+		<button id="btn-one" onclick="buyOrCancel('Softride Enzo Evo Running Shoes', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Softride Enzo Evo Running Shoes', 5000, 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/377048/01/sv04/fnd/PHL/fmt/png/Softride-Enzo-Evo-Running-Shoes')">ADD TO CART</a>
+	</div>
+	<div class="gallery"> 
+		<img id="myImage8" src="https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A7Q5NUUS1-3_600x.jpg?v=1654063300">
+		<div class="desc"> SAILOR MOON SK8-HI 'BLACK PINK' </div>
+		<button id="btn-one" onclick="buyOrCancel('Softride Enzo Evo Running Shoes', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Softride Enzo Evo Running Shoes', 5000, 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/377048/01/sv04/fnd/PHL/fmt/png/Softride-Enzo-Evo-Running-Shoes')">ADD TO CART</a>
+	   </div>
+	<div class="gallery"> 
+		<img id="myImage9" src="https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A5KRHA551-1_600x.jpg?v=1635873661">
+		<div class="desc"> MUSEUM OF CONTEMPORARY ART SK8 HI 'FRANCES STARK'  </div>
+		<button id="btn-one" onclick="buyOrCancel('Softride Enzo Evo Running Shoes', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Softride Enzo Evo Running Shoes', 5000, 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/377048/01/sv04/fnd/PHL/fmt/png/Softride-Enzo-Evo-Running-Shoes')">ADD TO CART</a>
+	   </div> 
+	   
+	   
+		
+	   </div>   
+	   
+ </div>
+ </header>
+
+ <script>
+	function buyOrCancel(productName, price, imageUrl) {
+            var confirmation = confirm("Are you sure you want to proceed with the purchase?");
+            if (confirmation) {
+                alert("Buying success! Product: " + productName + ", Price: " + price);
+            } else {
+                alert("Purchase canceled.");
+            }
+        }
+		function addToCart(productName, price, imageUrl) {
+    var confirmation = confirm("Are you sure you want to add this item to the cart?");
+    if (confirmation) {
+        // Perform the necessary actions to add the item to the cart
+        alert("Item added to the cart successfully!");
+
+        var cartItem = { productName: productName, price: price, imageUrl: imageUrl };
+        var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        cartItems.push(cartItem);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    } else {
+        // Handle the cancellation or any other logic you want
+        alert("Add to Cart cancelled.");
+    }
+}
+	var image = document.getElementById('myImage1');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/files/VN0A54F6YJ7-2_600x.png?v=1686282018');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/files/VN0A54F6YJ7-4_600x.png?v=1686282321');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage2');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/files/VN0001R1GI6-4_600x.png?v=1684313347');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/files/VN0001R1GI6-3_600x.png?v=1684313347');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage3');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/files/VN000D5IBMB-2_600x.png?v=1686131305');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/files/VN000D5IBMB-1_600x.png?v=1686131305');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage4');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0007NS448-2_600x.png?v=1667803387');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0007NS448-4_600x.png?v=1667803387');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage5');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0007NZBLK-1_600x.png?v=1675061590');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0007NZBLK-4_600x.png?v=1675061590');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage6');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A5JMJY23-5_600x.jpg?v=1657705048');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A5JMJY23-4_600x.jpg?v=1657705048');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage7');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A4BX1BML-3_600x.jpg?v=1657686980');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A4BX1BML-4_600x.jpg?v=1657686981');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage8');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A7Q5NUUS1-3_600x.jpg?v=1654063300');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A7Q5NB9P1_600x.jpg?v=1654062490');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage9');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A5KRHA551-1_600x.jpg?v=1635873661');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0099/5232/9785/products/VN0A5KRHA551-2_600x.jpg?v=1635873663');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+	document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+function myFunction() {
+  console.log("Clicked Buy now!");
+}
+		document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+
+ </script>
+ </body>
+ <footer>
+	<div class="footer">
+	<div class="row">
+	<a href="https://www.facebook.com/gilluther.magdugo.7/"><i class="fa fa-facebook"></i></a>
+	<a href="https://www.instagram.com/joal_macs/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR2W3TcAWx3iOT6OZfmHhKasAoQ3hCk2VZc2sTFjCxE2pzHNaU-keFsgzZ4"><i class="fa fa-instagram"></i></a>
+	<a href="https://twitter.com/kingluthluth?t=QHGNn7Vep193tbEO8KTHFQ&s=09&fbclid=IwAR3TmUnkp1Ig4uYi4MrDhiLlvn1JPH0zNQYW_N75F7GduuSyZGtYGMJXV9M"><i class="fa fa-twitter"></i></a>
+	</div>
+	
+	
+	<div class="row">
+	SHOELAB Copyright © 2023 Shoelab - All rights reserved || Designed By: Joal and Luther 
+	</div>
+	</div>
+	</footer>
+	
+</html>

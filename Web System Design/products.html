@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Index.css">
+ <title> PRODUCTS </title>
+ 
+ <style>
+	* {
+	   box-sizing: border-box;
+   }
+   
+   
+   body {
+	margin: 0;
+	padding:0;
+}
+
+	
+.main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: rgb(236, 83, 83);
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid rgb(236, 83, 83);
+	 color: rgb(236, 83, 83);
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid rgb(236, 83, 83);
+	 
+ }
+
+ .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 160px;
+  float: right;
+}
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #c11111;
+  margin-bottom: 5px;
+}
+ 
+ @media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    float: right;
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(2),
+  .navbar-toggle.active span:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(1),
+  .navbar-toggle.active span:nth-child(4) {
+    opacity: 0;
+  }
+
+  .main-nav.active {
+    display: inline-block;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    align-items: center;
+  }
+
+  .main-nav.active li {
+    margin: 10px 0;
+  }
+}
+ 
+   h1{
+	color:rgb(249, 31, 7);
+	font-family: sans-serif;
+   }
+	
+   .row {
+	   margin: auto;
+	   overflow: auto;
+	   background-color: black;
+	   padding: 10px;
+   }
+   
+   
+   .container {
+	   max-width: 1200px;
+	   margin: auto;
+	   overflow: auto;	
+	   
+   }
+	.gallery {
+	   margin: 5px;
+	   border: 1px solid black;
+	   float: left;
+	   width: 390px;
+	   position: relative;
+	   background-color: black;
+	}
+	
+	.gallery:hover {
+	   border: 1px solid rgb(236, 83, 83);
+	}
+   
+	.gallery img {
+	   width: 100%;
+	   height: auto;
+	}
+	
+	.desc {
+	   padding: 15px;
+	   text-align: center;
+	   color:gold;
+	}
+   
+	.desc a {
+	   color:black;
+	}
+   
+	.btn-one {
+	   font-family: "arial";
+	   float: right;
+	   text-align: center;
+	   border: 1px solid gray;
+	   padding: 10px 30px;
+	   color: rgb(95, 91, 91);
+	   text-decoration: none;
+	   font-size: 13px;
+	   margin-right: 125px;
+	   margin-bottom: 20px;	 
+   }	
+   
+   
+   
+   .btn-one:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+
+.title {
+	text-align: center;
+}
+
+.image {
+  float: left;
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+.category-button {
+   background-color: #000000;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   margin: 5px;
+   cursor: pointer;
+ }
+
+ .category-button:hover {
+   background-color: #ef0909;
+   transition: background-color 0.3s ease-in-out;
+ }
+
+ .category-buttons {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+   
+	</style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+	<img src="logo.jpg" class="image">
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="Lnew.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	 <li> <a href="contact-us.html"> CONTACT US </a></li>
+	 <li><a href="item.html">MY CART</a></li>
+	</ul>
+
+	<div class="navbar-toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+   
+  </div>
+
+  <div class="title">
+	<h1>ALL LIMITED EDITION SNEAKERS</h1>
+  </div>
+ 
+ <div class="container"> 
+	<div class="category-buttons">
+		<a href="Lnew.html" class="category-button">New Balance</a>
+		<a href="Nnew.html" class="category-button">Nike</a>
+		<a href="Lvans.html" class="category-button">Vans</a>
+		<a href="Lconv.html" class="category-button">Converse</a>
+		<a href="Ladi.html" class="category-button">Adidas</a>
+		<a href="Lpuma.html" class="category-button">Puma</a>
+	  </div>
+   
+   <div class="gallery"> 
+	 <img id="myImage1" src="https://images.squarespace-cdn.com/content/v1/53d5923fe4b01ef34f3a74f3/1651624173302-5JYOEW722VYVJT87DFGD/owl-vans1.jpg?format=1000w">
+     <div class="desc"> VANS OWL </div>
+	 <a href="#" class="btn-one"> BUY NOW </a>
+	</div>
+	<div class="gallery"> 
+	 <img id="myImage2" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/1546f0f0cf1b40d3add0aeab015a0dfe_9366/Codeschaos_22_Limited_Edition_Spikeless_Golf_Shoes_Beige_GV6680_01_standard.jpg">
+     <div class="desc"> ADIDAS CODECHAOS 22</div>
+	 <a href="#" class="btn-one"> BUY NOW </a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage3" src="https://cdn.sanity.io/images/c1chvb1i/production/71557a088844a1b92a901bfce35dfe3d35a2673c-1100x735.jpg?rect=183,0,735,735&w=1100&h=1100">
+     <div class="desc"> NEW BALANCE RETRO 1700 </div>
+	 <a href="#" class="btn-one"> BUY NOW </a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage4" src="https://images.replayjeans.com/get/w/1160/GXZ3U_000_C0004L_051_1.image?notfound=notavailable&background=225x225x225">
+     <div class="desc"> PUMA RALPH SAMSON </div>
+	 <a href="#" class="btn-one"> BUY NOW </a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage5" src="https://data.mascheronistore.com/imgprodotto/sneakers-ctas-hi-canvas-skull-limited-edition-man-black_40042_zoom.jpg">
+     <div class="desc"> CONVERSE CTAS HI CANVAS SKULL </div>
+	 <a href="#" class="btn-one"> BUY NOW </a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage6" src="https://www.buyandship.ph/contents/uploads/2022/11/Vans-x-One-Piece-02-1024x1024.png">
+     <div class="desc"> VANS ONE-PIECE </div>
+	 <a href="#" class="btn-one"> BUY NOW </a>
+	</div>
+	<div class="gallery"> 
+		<img id="myImage7" src="https://www.retrotogo.com/wp-content/uploads/2023/02/bauhaus1.jpg">
+		<div class="desc"> ADIDAS CAMPUS 00S YNUK SHOES </div>
+		<a href="#" class="btn-one"> BUY NOW </a>
+	</div>
+	<div class="gallery"> 
+		<img id="myImage8" src="https://grailify.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK21zQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--fc7dd64a0aa6ea62950e0bdd924e0e206bdc6f9f/image">
+		<div class="desc"> NEW BALANCE X RICH PAUL</div>
+		<a href="#" class="btn-one"> BUY NOW </a>
+	   </div>
+	<div class="gallery"> 
+		<img id="myImage9" src="https://media.karousell.com/media/photos/products/2022/4/11/nike_air_force_1_low_travis_sc_1649648498_6d717dd2_progressive.jpg">
+		<div class="desc"> NIKE AIRFORCE 1 LOW TRAVIS SCOTT </div>
+		<a href="#" class="btn-one"> BUY NOW </a>
+	   </div> 
+	   
+	   
+		
+	   </div>   
+	   
+ </div>
+ </header>
+
+ <script>
+	var image = document.getElementById('myImage1');
+image.setAttribute('data-original-src', 'https://images.squarespace-cdn.com/content/v1/53d5923fe4b01ef34f3a74f3/1651624173302-5JYOEW722VYVJT87DFGD/owl-vans1.jpg?format=500w');
+image.setAttribute('data-hover-src', 'https://images.squarespace-cdn.com/content/v1/53d5923fe4b01ef34f3a74f3/1651624173482-QZKFA2ZHHWFX9LTR7QUL/owl-vans4.jpg?format=500w');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage2');
+image.setAttribute('data-original-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2f3301fb2b0a4154ac4cadf3018030d0_9366/Codechaos_22_Recycled_Polyester_Spikeless_Golf_Shoes_White_GX4117_04_standard.jpg');
+image.setAttribute('data-hover-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/44fadda5c707418795f2adf3017f2bf6_9366/Codechaos_22_Recycled_Polyester_Spikeless_Golf_Shoes_White_GX4117_05_standard.jpg	');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage3');
+image.setAttribute('data-original-src', 'https://nb.scene7.com/is/image/NB/m1080t12_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440');
+image.setAttribute('data-hover-src', 'https://nb.scene7.com/is/image/NB/m1080t12_nb_06_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage4');
+image.setAttribute('data-original-src', 'https://images.replayjeans.com/get/w/1160/GXZ3U_000_C0004L_051_1.image?notfound=notavailable&background=225x225x225');
+image.setAttribute('data-hover-src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ99EylJ36MJcaCxfG7LOKUNbQtg_FskjrpQ&usqp=CAU');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage5');
+image.setAttribute('data-original-src', 'https://data.mascheronistore.com/imgprodotto/sneakers-ctas-hi-canvas-skull-limited-edition-man-black_40042_zoom.jpg');
+image.setAttribute('data-hover-src', 'https://data.mascheronistore.com/imgprodotto/sneakers-ctas-hi-canvas-skull-limited-edition-man-black_40040_big.jpg');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage6');
+image.setAttribute('data-original-src', 'https://www.buyandship.ph/contents/uploads/2022/11/Vans-x-One-Piece-04-1024x1024.png');
+image.setAttribute('data-hover-src', 'https://www.buyandship.ph/contents/uploads/2022/11/Vans-x-One-Piece-05-1024x1024.png');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage7');
+image.setAttribute('data-original-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/624ec35e007f471d98f7afaa00bc49a0_9366/adidas_Campus_00s_YNuK_Shoes_Brown_IE2175_04_standard.jpg');
+image.setAttribute('data-hover-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f8b12f44a69e4cb399feafac012b35af_9366/adidas_Campus_00s_YNuK_Shoes_Brown_IE2175_14_hover_standard.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage8');
+image.setAttribute('data-original-src', 'https://grailify.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK21zQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--fc7dd64a0aa6ea62950e0bdd924e0e206bdc6f9f/image');
+image.setAttribute('data-hover-src', 'https://laced.imgix.net/products/5d5479ef-693b-4f6f-9a58-6172d6897eda.png?auto=format&fit=crop&w=824');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage9');
+image.setAttribute('data-original-src', 'https://media.karousell.com/media/photos/products/2022/4/11/nike_air_force_1_low_travis_sc_1649648498_6d717dd2_progressive.jpg');
+image.setAttribute('data-hover-src', 'https://i.pinimg.com/736x/a4/d5/15/a4d515de64f9fa3663690b869a5c7f20.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+	document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+function myFunction() {
+  console.log("Clicked Buy now!");
+}
+		document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+
+ </script>
+ </body>
+</html>

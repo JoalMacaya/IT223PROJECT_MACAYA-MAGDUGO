@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <style>
+      *  {
+      box-sizing: border-box;
+    }
+    .gallery {
+        
+         float: left;
+         width: 390px;
+         position: absolute;
+         margin-top: 210px;
+         max-width: 400px;
+         padding: 50px;
+         
+      } 
+    
+      .contact-info {
+  width: 20%;
+  padding: 20px;
+  background-color: #f2f2f2;
+  float: right;
+  margin-top: 250px;
+  max-width: 400px;
+  margin-right: 120px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
+.contact-info h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #000000;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-info li strong {
+  font-weight: bold;
+}
+
+.contact-info a {
+  color: #555;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    h2 {
+        margin-top: 0;
+    }
+    
+    #videoBG {
+       position: fixed;
+       z-index: -1;	
+       right: 0;
+       bottom: 0;
+       min-width: 100%;
+       min-height: 100%;
+       width: auto;
+       height: auto;
+       
+     }
+     .image {
+      float: left;
+      height: 80px;
+      width: 80px;
+      margin-left: 20px;
+      border-radius: 50%;
+      border: solid 2px white;
+    }
+    
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+    
+     
+    .main-nav {
+       float: right;
+       list-style: none;
+       margin: 30px;
+       
+     }
+     
+     .main-nav li {
+       display: inline-block;	 
+     }
+     
+     .main-nav li a {
+       color: rgb(236, 83, 83);
+       text-decoration: none;
+       padding: 5px 20px;
+       font-family: "Arial";
+       font-size: 15px;
+       
+     }
+     
+     .main-nav li.active a {
+       border: 1px solid rgb(236, 83, 83);
+       color: rgb(236, 83, 83);
+     }
+     
+     .main-nav li a:hover {
+       border: 1px solid rgb(236, 83, 83);
+       
+     }
+    
+     .navbar-toggle {
+      display: none;
+      cursor: pointer;
+      margin-bottom: 160px;
+      float: right;
+      justify-content: space-between;
+    }
+    
+    .navbar-toggle span {
+      display: flex;
+      width: 25px;
+      height: 3px;
+      background-color: #c11111;
+      margin-bottom: 5px;
+      
+    }
+     
+     @media (max-width: 768px) {
+      .main-nav {
+        display: none;
+      }
+    
+      .navbar-toggle {
+        display: block;
+        float: right;
+      }
+    
+      .navbar-toggle.active span:nth-child(2) {
+        transform: rotate(45deg);
+      }
+    
+      .navbar-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+    
+      .navbar-toggle.active span:nth-child(2),
+      .navbar-toggle.active span:nth-child(3) {
+        margin-bottom: 0;
+      }
+    
+      .navbar-toggle.active span:nth-child(1),
+      .navbar-toggle.active span:nth-child(4) {
+        opacity: 0;
+      }
+    
+      .main-nav.active {
+        display: inline-block;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        right: 10px;
+        align-items: center;
+      }
+    
+      .main-nav.active li {
+        margin: 10px 0;
+        
+      }
+
+      .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    .gallery {
+    position: relative;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    max-width: none;
+    padding: 0;
+  }
+
+  .contact-info {
+    float: none;
+    margin-top: 0;
+    max-width: none;
+    margin-right: 0;
+    padding: 0;
+  }
+    }
+     
+     
+    .row {
+      margin: auto;
+      overflow: auto;
+      background-color: black;
+      padding: 10px;
+    
+    }
+    
+    
+    h1 {
+      text-align: center;
+    
+    }
+    
+    form {
+      max-width: 400px;
+      margin: auto;
+      background-color: #fff;
+      margin-top: 120px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 100px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 0px;
+      margin-top: 100px;
+    }
+    
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #5a5a5a;
+      margin-bottom: 5px  ;
+    }
+    
+    button {
+      background-color: #000000;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+    button:hover {
+      background-color: #e40b07;
+    }
+    
+    .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+     </style>
+</head>
+<body>
+    <header>
+        <div class="row"> 
+          <img src="logo.jpg" class="image">
+   
+            <ul class="main-nav"> 
+             <li> <a href="HOME.html"> HOME </a></li>
+             <li> <a href="Lnew.html"> PRODUCTS </a></li>
+             <li> <a href="about.html"> ABOUT </a></li>
+             <li class="active"> <a href="contact us.html"> CONTACT US </a></li>
+             <li><a href="item.html">MY CART</a></li>
+            </ul>
+           
+        
+          <div class="navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+    </div>
+
+    <div class="gallery"> 
+      <img id="myImage1" src="https://map.viamichelin.com/map/carte?map=viamichelin&z=10&lat=8.43965&lon=124.62015&width=550&height=382&format=png&version=latest&layer=background&debug_pattern=.*">
+     </div>
+
+    <div class="contact-info">
+  
+      <h2>Contact Information</h2>
+      <ul>
+          <li><strong>Email:</strong> shoeshop@gmail.com</li>
+          <li><strong>Phone:</strong> 09657184016</li>
+        
+      </ul>
+  </div>
+    
+  <form id="contact-form">
+    <h1>Contact Us!</h1>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+        </header> 
+
+   <video id="videoBG" poster="mposter.PNG" autoplay muted loop play-inline>
+    <source src="Shoes by 2GO - Theatrical Ad Film _ Commercial.mp4" type="video/mp4"> </video>
+        
+
+
+ <script>
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  if (name === "" || email === "" || message === "") {
+    alert("Please fill in all fields");
+    return;
+  }
+
+  var formData = {
+    name: name,
+    email: email,
+    message: message
+  };
+
+  fetch("/submit-contact-form", {
+    method: "POST",
+    body: JSON.stringify(formData),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  .then(function(response) {
+    if (response.ok) {
+      alert("Form submitted successfully");
+      document.getElementById("contact-form").reset();
+    } else {
+      alert("An error occurred. Please try again later.");
+    }
+  })
+  .catch(function(error) {
+    alert("An error occurred. Please try again later.");
+  });
+});
+
+document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+var image = document.getElementById('myImage1');
+image.setAttribute('data-original-src', 'https://map.viamichelin.com/map/carte?map=viamichelin&z=10&lat=8.43965&lon=124.62015&width=550&height=382&format=png&version=latest&layer=background&debug_pattern=.*');
+image.setAttribute('data-hover-src', 'https://media-cdn.tripadvisor.com/media/photo-s/04/98/29/20/centrio-mall.jpg');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+
+  this.src = this.getAttribute('data-original-src');
+});
+
+
+
+ </script>
+ </body>
+ <footer>
+  <div class="footer">
+  <div class="row">
+  <a href="https://www.facebook.com/gilluther.magdugo.7/"><i class="fa fa-facebook"></i></a>
+  <a href="https://www.instagram.com/joal_macs/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR2W3TcAWx3iOT6OZfmHhKasAoQ3hCk2VZc2sTFjCxE2pzHNaU-keFsgzZ4"><i class="fa fa-instagram"></i></a>
+  <a href="https://twitter.com/kingluthluth?t=QHGNn7Vep193tbEO8KTHFQ&s=09&fbclid=IwAR3TmUnkp1Ig4uYi4MrDhiLlvn1JPH0zNQYW_N75F7GduuSyZGtYGMJXV9M"><i class="fa fa-twitter"></i></a>
+  </div>
+  
+  <div class="row">
+  <ul>
+  <li><a href="HOME.html">Home</a></li>
+  <li><a href="contact-us.html">Contact Us</a></li>
+  <li><a href="about.html">About Us</a></li>
+  </ul>
+
+  
+  <div class="row">
+  SHOELAB Copyright © 2023 Shoelab - All rights reserved || Designed By: Joal and Luther 
+  </div>
+  </div>
+  </footer>
+ </html>

@@ -1,0 +1,508 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+ <title> Limited Edited: Adidas </title>
+ 
+ <style>
+	* {
+	   box-sizing: border-box;
+   }
+   
+   
+   body {
+	margin: 0;
+	padding:0;
+}
+
+	
+.main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: rgb(236, 83, 83);
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid rgb(236, 83, 83);
+	 color: rgb(236, 83, 83);
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid rgb(236, 83, 83);
+	 
+ }
+
+ .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 160px;
+  float: right;
+}
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #c11111;
+  margin-bottom: 5px;
+}
+ 
+ @media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    float: right;
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(2),
+  .navbar-toggle.active span:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(1),
+  .navbar-toggle.active span:nth-child(4) {
+    opacity: 0;
+  }
+
+  .main-nav.active {
+    display: inline-block;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    align-items: center;
+  }
+
+  .main-nav.active li {
+    margin: 10px 0;
+  }
+  .footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+ 
+   h1{
+	color:rgb(249, 31, 7);
+	font-family: sans-serif;
+   }
+	
+   .row {
+	   margin: auto;
+	   overflow: auto;
+	   background-color: black;
+	   padding: 10px;
+   }
+   
+   
+   .container {
+	   max-width: 1200px;
+	   margin: auto;
+	   overflow: auto;	
+	   
+   }
+	.gallery {
+	   margin: 5px;
+	   border: 1px solid black;
+	   float: left;
+	   width: 390px;
+	   position: relative;
+	   background-color: black;
+	}
+	
+	.gallery:hover {
+	   border: 1px solid rgb(236, 83, 83);
+	}
+   
+	.gallery img {
+	   width: 100%;
+	   height: auto;
+	}
+	
+	.desc {
+	   padding: 15px;
+	   text-align: center;
+	   color:gold;
+	}
+   
+	.desc a {
+	   color:black;
+	}
+   
+	#btn-one {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	background-color: black;
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.btn-two {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#btn-one {
+	margin-right: 10px;
+}
+
+.btn-two {
+	margin-right: 0;
+}
+
+#btn-one:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+
+   .btn-two:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+   .footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+p {
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+}
+
+.title {
+	text-align: center;
+}
+
+.image {
+  float: left;
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+.category-button {
+   background-color: #000000;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   margin: 5px;
+   cursor: pointer;
+ }
+
+ .category-button:hover {
+   background-color: #ef0909;
+   transition: background-color 0.3s ease-in-out;
+ }
+
+ .category-buttons {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ p {
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+}
+   
+	</style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+	<img src="logo.jpg" class="image">
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="Ladi.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	 <li> <a href="contact-us.html"> CONTACT US </a></li>
+   <li><a href="item.html">MY CART</a></li>
+	</ul>
+   
+  
+  <div class="navbar-toggle">
+	<span></span>
+	<span></span>
+	<span></span>
+  </div>
+</div>
+
+  <div class="title">
+	<h1>ALL LIMITED EDITION SNEAKERS</h1>
+  </div>
+ 
+ <div class="container"> 
+	<div class="category-buttons">
+		<a href="Lnew.html" class="category-button">New Balance</a>
+		<a href="Nnew.html" class="category-button">Nike</a>
+		<a href="Lvans.html" class="category-button">Vans</a>
+		<a href="Lconv.html" class="category-button">Converse</a>
+		<a href="Ladi.html" class="category-button">Adidas</a>
+		<a href="Lpuma.html" class="category-button">Puma</a>
+	  </div>
+   
+   <div class="gallery"> 
+	 <img id="myImage1" src="https://cdn.shopify.com/s/files/1/0077/3020/0674/products/Adidas_Yeezy_Boost_700_V2_Sun_Wash_Orange_Black_GW0296_P6.jpg?v=1634339875">
+     <div class="desc"> YEEZY Boost 700 Wash Orange  </div>
+     <p>₱6,750</p>
+	 <button id="btn-one" onclick="buyOrCancel('YEEZY Boost 700 Wash Orange', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('YEEZY Boost 700 Wash Orange', 5000, 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/Adidas_Yeezy_Boost_700_V2_Sun_Wash_Orange_Black_GW0296_P6.jpg?v=1634339875')">ADD TO CART</a>
+	</div>
+	<div class="gallery"> 
+	 <img id="myImage2" src="https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26539398_750x.png?v=1600840900">
+     <div class="desc"> NMD HU Pharrell Humanrace Scarlet</div>
+     <p>₱4,350</p>
+	 <button id="btn-one" onclick="buyOrCancel('NMD HU Pharrell Humanrace Scarlet', 4350)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('NMD HU Pharrell Humanrace Scarlet', 4350, 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26539398_750x.png?v=1600840900')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage3" src="https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26542327_750x.png?v=1600841335">
+     <div class="desc"> YEEZY Boost 350 V2 Clay </div>
+     <p>₱2,400</p>
+	 <button id="btn-one" onclick="buyOrCancel('YEEZY Boost 350 V2 Clay', 2400)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('YEEZY Boost 350 V2 Clay', 2400, 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26542327_750x.png?v=1600841335')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage4" src="https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26535538.png?v=1600839958">
+     <div class="desc">  NMD R1 Glitch</div>
+     <p>₱6,750</p>
+	 <button id="btn-one" onclick="buyOrCancel('NMD R1 Glitch', 6750)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('NMD R1 Glitch', 6750, 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26535538.png?v=1600839958')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage5" src="https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26535482_750x.png?v=1600839955 ">
+     <div class="desc"> Ultra Mastermind Black </div>
+     <p>₱5,750</p>
+	 <button id="btn-one" onclick="buyOrCancel('Ultra Mastermind Black', 5750)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Ultra Mastermind Black', 5750, 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26535482_750x.png?v=1600839955')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage6" src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwdc3ac5d1/images/k_08/A06027C_K_08X1.jpg?sw=460">
+     <div class="desc"> YEEZY Boost 700 V3 Arzareth </div>
+     <p>₱2,250</p>
+	 <button id="btn-one" onclick="buyOrCancel('YEEZY Boost 700 V3 Arzareth', 2250)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('YEEZY Boost 700 V3 Arzareth', 2250, 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwdc3ac5d1/images/k_08/A06027C_K_08X1.jpg?sw=460')">ADD TO CART</a>
+	</div>
+
+	   
+		
+	   </div>   
+	   
+ </div>
+ </header>
+
+ <script>
+  function buyOrCancel(productName, price, imageUrl) {
+            var confirmation = confirm("Are you sure you want to proceed with the purchase?");
+            if (confirmation) {
+                alert("Buying success! Product: " + productName + ", Price: " + price);
+            } else {
+                alert("Purchase canceled.");
+            }
+        }
+		function addToCart(productName, price, imageUrl) {
+    var confirmation = confirm("Are you sure you want to add this item to the cart?");
+    if (confirmation) {
+        // Perform the necessary actions to add the item to the cart
+        alert("Item added to the cart successfully!");
+
+        var cartItem = { productName: productName, price: price, imageUrl: imageUrl };
+        var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        cartItems.push(cartItem);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    } else {
+        // Handle the cancellation or any other logic you want
+        alert("Add to Cart cancelled.");
+    }
+}
+	var image = document.getElementById('myImage1');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/Adidas_Yeezy_Boost_700_V2_Sun_Wash_Orange_Black_GW0296_P6.jpg?v=1634339875');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ScreenShot2021-11-06at2.31.19pm.png?v=1636171800');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage2');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26539398_750x.png?v=1600840900');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26539400_750x.png?v=1600840901');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage3');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26542327_750x.png?v=1600841335');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26542327_750x.png?v=1600841335');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage4');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26535538.png?v=1600839958');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26535539.png?v=1600839989');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage5');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26535482_750x.png?v=1600839955');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/ririr-26535483_750x.png?v=1600839954');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage6');
+image.setAttribute('data-original-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/G54850_2_750x.png?v=1600841648');
+image.setAttribute('data-hover-src', 'https://cdn.shopify.com/s/files/1/0077/3020/0674/products/G54850_3_750x.png?v=1600841669');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+
+	document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+function myFunction() {
+  console.log("Clicked Buy now!");
+}
+		document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+
+ </script>
+ </body>
+ <footer>
+	<div class="footer">
+	<div class="row">
+	<a href="https://www.facebook.com/gilluther.magdugo.7/"><i class="fa fa-facebook"></i></a>
+	<a href="https://www.instagram.com/joal_macs/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR2W3TcAWx3iOT6OZfmHhKasAoQ3hCk2VZc2sTFjCxE2pzHNaU-keFsgzZ4"><i class="fa fa-instagram"></i></a>
+	<a href="https://twitter.com/kingluthluth?t=QHGNn7Vep193tbEO8KTHFQ&s=09&fbclid=IwAR3TmUnkp1Ig4uYi4MrDhiLlvn1JPH0zNQYW_N75F7GduuSyZGtYGMJXV9M"><i class="fa fa-twitter"></i></a>
+	</div>
+	
+	<div class="row">
+	SHOELAB Copyright © 2023 Shoelab - All rights reserved || Designed By: Joal and Luther 
+	</div>
+  </div>
+ </footer>
+</html>

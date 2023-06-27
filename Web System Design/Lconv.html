@@ -1,0 +1,491 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+ <title> Limited Edited: Converse </title>
+ 
+ <style>
+	* {
+	   box-sizing: border-box;
+   }
+   
+   
+   body {
+	margin: 0;
+	padding:0;
+}
+
+	
+.main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: rgb(236, 83, 83);
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid rgb(236, 83, 83);
+	 color: rgb(236, 83, 83);
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid rgb(236, 83, 83);
+	 
+ }
+
+ .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 160px;
+  float: right;
+}
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #c11111;
+  margin-bottom: 5px;
+}
+ 
+ @media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    float: right;
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(2),
+  .navbar-toggle.active span:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(1),
+  .navbar-toggle.active span:nth-child(4) {
+    opacity: 0;
+  }
+
+  .main-nav.active {
+    display: inline-block;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    align-items: center;
+  }
+
+  .main-nav.active li {
+    margin: 10px 0;
+  }
+}
+ 
+   h1{
+	color:rgb(249, 31, 7);
+	font-family: sans-serif;
+   }
+	
+   .row {
+	   margin: auto;
+	   overflow: auto;
+	   background-color: black;
+	   padding: 10px;
+   }
+   
+   
+   .container {
+	   max-width: 1200px;
+	   margin: auto;
+	   overflow: auto;	
+	   
+   }
+	.gallery {
+	   margin: 5px;
+	   border: 1px solid black;
+	   float: left;
+	   width: 390px;
+	   position: relative;
+	   background-color: black;
+	}
+	
+	.gallery:hover {
+	   border: 1px solid rgb(236, 83, 83);
+	}
+   
+	.gallery img {
+	   width: 100%;
+	   height: auto;
+	}
+	
+	.desc {
+	   padding: 15px;
+	   text-align: center;
+	   color:gold;
+	}
+   
+	.desc a {
+	   color:black;
+	}
+   
+	#btn-one {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	background-color: black;
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.btn-two {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#btn-one {
+	margin-right: 10px;
+}
+
+.btn-two {
+	margin-right: 0;
+}
+
+#btn-one:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+
+   .btn-two:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+
+.title {
+	text-align: center;
+}
+
+.image {
+  float: left;
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+.category-button {
+   background-color: #000000;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   margin: 5px;
+   cursor: pointer;
+ }
+
+ .category-button:hover {
+   background-color: #ef0909;
+   transition: background-color 0.3s ease-in-out;
+ }
+
+ .category-buttons {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+   
+	</style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+	<img src="logo.jpg" class="image">
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="products.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	 <li> <a href="contact-us.html"> CONTACT US </a></li>
+	 <li><a href="item.html">MY CART</a></li>
+	</ul>
+   
+  
+  <div class="navbar-toggle">
+	<span></span>
+	<span></span>
+	<span></span>
+  </div>
+</div>
+
+  <div class="title">
+	<h1>ALL LIMITED EDITION SNEAKERS</h1>
+  </div>
+ 
+ <div class="container"> 
+	<div class="category-buttons">
+		<a href="Lnew.html" class="category-button">New Balance</a>
+		<a href="Nnew.html" class="category-button">Nike</a>
+		<a href="Lvans.html" class="category-button">Vans</a>
+		<a href="Lconv.html" class="category-button">Converse</a>
+		<a href="Ladi.html" class="category-button">Adidas</a>
+		<a href="Lpuma.html" class="category-button">Puma</a>
+	  </div>
+   
+   <div class="gallery"> 
+	 <img id="myImage1" src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw6d0ee36c/images/h_08/162972C_H_08X1.jpg?sw=460">
+     <div class="desc"> Comme des Garçons PLAY Chuck 70 Multi Heart  </div>
+	 <p>₱5,550</p>
+	 <button id="btn-one" onclick="buyOrCancel('Comme des Garçons PLAY Chuck 70 Multi Heart', 5550)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Comme des Garçons PLAY Chuck 70 Multi Heart', 5550, 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw6d0ee36c/images/h_08/162972C_H_08X1.jpg?sw=460')">ADD TO CART</a>
+	</div>
+	<div class="gallery"> 
+	 <img id="myImage2" src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw0071c2af/images/e_08/A03174C_E_08X1.jpg?sw=460">
+     <div class="desc"> Patta Four-Leaf Clover One Star Pro </div>
+	 <p>₱4,770</p>
+	 <button id="btn-one" onclick="buyOrCancel('Patta Four-Leaf Clover One Star Pro', 4750)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Patta Four-Leaf Clover One Star Pro', 4750, 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw0071c2af/images/e_08/A03174C_E_08X1.jpg?sw=460')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage3" src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw91e3e1f7/images/k_08/A05964C_K_08X1.jpg?sw=460">
+     <div class="desc"> Converse x LFC Chuck 70 </div>
+	 <p>₱3,750</p>
+	 <button id="btn-one" onclick="buyOrCancel('Converse x LFC Chuck 70', 3750)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Converse x LFC Chuck 70', 3750, 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw91e3e1f7/images/k_08/A05964C_K_08X1.jpg?sw=460')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage4" src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw090e2a82/images/d_08/A04152C_D_08X1.jpg?sw=460">
+     <div class="desc"> PL Vulc Pro Suede </div>
+	 <p>₱2,220</p>
+	 <button id="btn-one" onclick="buyOrCancel('PL Vulc Pro Suede', 2220)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('PL Vulc Pro Suede', 2220, 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw090e2a82/images/d_08/A04152C_D_08X1.jpg?sw=460')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage5" src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwb8d82dfa/images/d_08/A04149C_D_08X1.jpg?sw=460 ">
+     <div class="desc"> One Star Pro Denim </div>
+	 <p>₱6,750</p>
+	 <button id="btn-one" onclick="buyOrCancel('One Star Pro Denim', 6750)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('One Star Pro Denim', 6750, 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwb8d82dfa/images/d_08/A04149C_D_08X1.jpg?sw=460')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage6" src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwdc3ac5d1/images/k_08/A06027C_K_08X1.jpg?sw=460">
+     <div class="desc"> Run Star Legacy CX Pride </div>
+	 <p>₱9,450</p>
+	 <button id="btn-one" onclick="buyOrCancel('Run Star Legacy CX Pride', 9450)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Run Star Legacy CX Pride', 9450, 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwdc3ac5d1/images/k_08/A06027C_K_08X1.jpg?sw=460')">ADD TO CART</a>
+	</div>
+	<div class="gallery"> 
+		<img id="myImage7" src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw40a5642b/images/e_08/A05965C_E_08X1.jpg?sw=460">
+		<div class="desc"> LFC Run Star Hike Platform </div>
+		<p>₱3,250</p>
+		<button id="btn-one" onclick="buyOrCancel('LFC Run Star Hike Platform', 3250)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('LFC Run Star Hike Platform', 3250, 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw40a5642b/images/e_08/A05965C_E_08X1.jpg?sw=460')">ADD TO CART</a>
+	</div>
+	<div class="gallery"> 
+		<img id="myImage8" src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwb588c2fc/images/d_08/A03467C_D_08X1.jpg?sw=460">
+		<div class="desc"> Explore Color Pop </div>
+		<p>₱6,750</p>
+		<button id="btn-one" onclick="buyOrCancel('Explore Color Pop', 6750)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Explore Color Pop', 6750, 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwb588c2fc/images/d_08/A03467C_D_08X1.jpg?sw=460')">ADD TO CART</a>
+	   </div>
+	<div class="gallery"> 
+		<img id="myImage9" src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwea0ada0e/images/i_08/A03327C_I_08X1.jpg?sw=460">
+		<div class="desc"> Sky High Farm Workwear Chuck 70  </div>
+		<p>₱3,750</p>
+		<button id="btn-one" onclick="buyOrCancel('Sky High Farm Workwear Chuck 70', 3750)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('Sky High Farm Workwear Chuck 70', 3750, 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwea0ada0e/images/i_08/A03327C_I_08X1.jpg?sw=460')">ADD TO CART</a>
+	   </div> 
+	   
+	   
+		
+	   </div>   
+	   
+ </div>
+ </header>
+
+ <script>
+	function buyOrCancel(productName, price, imageUrl) {
+            var confirmation = confirm("Are you sure you want to proceed with the purchase?");
+            if (confirmation) {
+                alert("Buying success! Product: " + productName + ", Price: " + price);
+            } else {
+                alert("Purchase canceled.");
+            }
+        }
+		function addToCart(productName, price, imageUrl) {
+    var confirmation = confirm("Are you sure you want to add this item to the cart?");
+    if (confirmation) {
+        // Perform the necessary actions to add the item to the cart
+        alert("Item added to the cart successfully!");
+
+        var cartItem = { productName: productName, price: price, imageUrl: imageUrl };
+        var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        cartItems.push(cartItem);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    } else {
+        // Handle the cancellation or any other logic you want
+        alert("Add to Cart cancelled.");
+    }
+}
+	var image = document.getElementById('myImage1');
+image.setAttribute('data-original-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw6d0ee36c/images/h_08/162972C_H_08X1.jpg?sw=460');
+image.setAttribute('data-hover-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw53b79d3a/images/d_08/162972C_D_08X1.jpg?sw=460');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage2');
+image.setAttribute('data-original-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw0071c2af/images/e_08/A03174C_E_08X1.jpg?sw=460');
+image.setAttribute('data-hover-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw71228f34/images/k_08/A03174C_K_08X1.jpg?sw=460');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage3');
+image.setAttribute('data-original-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw91e3e1f7/images/k_08/A05964C_K_08X1.jpg?sw=460');
+image.setAttribute('data-hover-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw06532126/images/d_08/A05964C_D_08X1.jpg?sw=460');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage4');
+image.setAttribute('data-original-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw090e2a82/images/d_08/A04152C_D_08X1.jpg?sw=460');
+image.setAttribute('data-hover-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw21f752e8/images/b_08/A04152C_B_08X1.jpg?sw=460');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage5');
+image.setAttribute('data-original-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwb8d82dfa/images/d_08/A04149C_D_08X1.jpg?sw=460');
+image.setAttribute('data-hover-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw0e0c5324/images/b_08/A04149C_B_08X1.jpg?sw=460');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage6');
+image.setAttribute('data-original-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwdc3ac5d1/images/k_08/A06027C_K_08X1.jpg?sw=460');
+image.setAttribute('data-hover-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw32b7fcb7/images/j_08/A06027C_J_08X1.jpg?sw=460');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage7');
+image.setAttribute('data-original-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw40a5642b/images/e_08/A05965C_E_08X1.jpg?sw=460');
+image.setAttribute('data-hover-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwd606efa0/images/f_08/A05965C_F_08X1.jpg?sw=460');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage8');
+image.setAttribute('data-original-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwb588c2fc/images/d_08/A03467C_D_08X1.jpg?sw=460');
+image.setAttribute('data-hover-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwe549b1f5/images/h_08/A03467C_H_08X1.jpg?sw=460');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage9');
+image.setAttribute('data-original-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwea0ada0e/images/i_08/A03327C_I_08X1.jpg?sw=460');
+image.setAttribute('data-hover-src', 'https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwe05654eb/images/e_08/A03327C_E_08X1.jpg?sw=460');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+	document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+function myFunction() {
+  console.log("Clicked Buy now!");
+}
+		document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+
+ </script>
+ </body>
+</html>

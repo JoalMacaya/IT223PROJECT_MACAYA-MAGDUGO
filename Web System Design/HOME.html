@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> HOME </title>
+ 
+ 
+ <style>
+ * {
+	box-sizing: border-box;
+}
+#videoBG {
+	 position: fixed;
+	 z-index: -1;	
+	 right: 0;
+	 bottom: 0;
+	 min-width: 100%;
+	 min-height: 100%;
+	 width: auto;
+	 height: auto;
+	 
+ }
+
+ .image {
+  float: left;
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+body {
+	margin: 0;
+	padding:0;
+}
+
+ 
+.main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: rgb(236, 83, 83);
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid rgb(236, 83, 83);
+	 color: rgb(236, 83, 83);
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid rgb(236, 83, 83);
+	 
+ }
+
+ .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 160px;
+  float: right;
+  justify-content: space-between;
+}
+
+.navbar-toggle span {
+  display: flex;
+  width: 25px;
+  height: 3px;
+  background-color: #c11111;
+  margin-bottom: 5px;
+
+}
+ 
+ @media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    float: right;
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(2),
+  .navbar-toggle.active span:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(1),
+  .navbar-toggle.active span:nth-child(4) {
+    opacity: 0;
+  }
+
+  .main-nav.active {
+    display: inline-block;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    align-items: center;
+  }
+
+  .main-nav.active li {
+    margin: 10px 0;
+  }
+}
+ 
+ 
+.row {
+	margin: auto;
+	overflow: auto;
+	background-color: black;
+	padding: 10px;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;	
+	
+}
+ .gallery {
+	margin: 5px;
+	float: left;
+	width: 390px;
+	position: relative;
+ }
+ 
+ .gallery img {
+	width: 100%;
+	height: auto;
+ }
+ 
+ .desc {
+	padding: 15px;
+	text-align: center;
+	color:black;
+	letter-spacing: 5px;
+ }
+
+ .desc a:hover{
+	color: red;
+ }
+
+ .desc a {
+	color:#F7DB4F;
+	padding: 15px;
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-decoration: none;
+ }
+</style>
+</head>
+<body> 
+<header> 
+ <div class="row"> 
+	<img src="logo.jpg" class="image">
+  
+   <ul class="main-nav"> 
+	<li class="active"> <a href="HOME.html"> HOME </a></li>
+	<li> <a href="Lnew.html"> PRODUCTS </a></li>
+	<li> <a href="about.html"> ABOUT </a></li>
+	<li> <a href="contact-us.html"> CONTACT US </a></li>
+	<li><a href="item.html">MY CART</a></li>
+  </ul>
+   </ul>
+
+   <div class="navbar-toggle">
+	<span></span>
+	<span></span>
+	<span></span>
+  </div>
+  
+  
+ </div>
+
+<div class="container"> 
+  
+  <div class="gallery"> 
+   <a href="newbalance.html" onclick="myFunction()"><img src="https://w0.peakpx.com/wallpaper/149/676/HD-wallpaper-new-balance-black-logo-newbalance-running-shoes-sports-thumbnail.jpg"></a>
+	 <div class="desc"> 
+	   <a href="newbalance.html" onclick="myFunction()"> <b> NEW BALANCE <b> </a></div>
+   </div>
+   
+   <div class="gallery"> 
+	   <a href="Nike.html" onclick="myFunction()"><img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F67979fc2-9bc6-4ef1-a91a-9f8129c57645_1500x1500.jpeg"></a>
+	<div class="desc">
+	   <a href="Nike.html" onclick="myFunction()"> NIKE</a></div>
+	</div>
+
+ <div class="gallery"> 
+   <a href="VANS.html" onclick="myFunction()"><img src="https://i.pinimg.com/474x/95/3b/70/953b70ac6700b640153933a1891e6f2b.jpg">
+	<div class="desc">
+	   <a href="VANS.html" onclick="myFunction()"> VANS </a></div>
+   </div>
+
+ <div class="gallery"> 
+   <a href="converse.html" onclick="myFunction()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKS2Gbn8AgriYEcK3zlMt87TapsUIcn9Na8P7UsNK0t8aozzKGH3SCP8_y63b7Z4nKl58&usqp=CAU">
+	<div class="desc">
+	   <a href="converse.html" onclick="myFunction()"> CONVERSE </a></div>
+   </div>
+
+ <div class="gallery"> 
+   <a href="adidas.html" onclick="myFunction()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFAWqNR2Li3Z8p0kmeAM0y9SgvlVmzJbJfmJHcWOm5-4pdEPB4">
+	<div class="desc">
+	   <a href="adidas.html" onclick="myFunction()"> ADIDAS</a></div>
+   </div>
+
+ <div class="gallery"> 
+	<a href="puma.html" onclick="myFunction()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAh1BMVEUAAAD////8/PwEBAT5+fkICAj29vbz8/MMDAzr6+vw8PDg4OBtbW1DQ0MTExMhISGDg4NXV1doaGiQkJCJiYnNzc27u7ubm5tzc3Pc3NwcHBzGxsa4uLg5OTnl5eWdnZ0wMDBgYGBPT0+rq6tTU1M+Pj7T09N7e3unp6coKCgzMzOEhIRISEjOcz/hAAAJKElEQVR4nO2ciXqjOAyAbWMgkPskae6kpcf0/Z9vJJlchIakxdDy6d/Z7n6TpLIsW4ctIgTDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDML8AxyDc8iXjD9exLhiUwz+u49iWlMbF2QW51lUEGU7DKV9B4booE4TbF9UoYR6/xHEtzi3tP9Fr4zLtR2Ur2fkXe16zlexHO8DidMVUruB/t0qORDmmdFz0Lp3eSiJqalUYLpCZUhPxGUgVLGG5WhVnaLgwj/1YalBPKt3s2hQGGvZAiByvpK/U3qaoMzpCRFJ6nlKoo9e3KQtMprVWyoOfGmR1bAo70BCbuQSRCk2oPNmyJMd1cEk+jZU8of0gXreW+DIGyeKXLMUl0V+dhIINnwsXkwjDPTiIpScvANlB/G+JwcqCF3dgE4pdiFvwKHBma+E4HeHMlfZ1SkNFu2MxEJTtFC61IZahVvpsRte2ogUMfy61p9Iawq7UqGQQWUg1IEpsAlDwTCi4UgsaOpSIiiaZLGVCmlf8R/rRht5clFD69ynGSTxIAlo2Un7XpVKim96DVztyNXzCLKCYDemS61oYzXCd4Oz6IztZG9gPNsRaqhwNtZzBfmw0CtmQlCJOkz1IO8HTsz7OoA0NcWW85ZlQYbCS840oZh2R0EAns4rxNxih67FRttG6G4OUWzbEraghE5B6XYxQXAl7mXgZsOBqmFTfNlJFkPWaxIXb4Bsgp9sVUYpDNvoskxUKLnT0TiOxEZIErbqR2Qr54KSHUQHBEYSOkwWqwmHDatGEo+0GtBXuURHnPP55AeBihSbNolgKK/nEEXLby1jeaUPp+VAGvP5c7jj5jZEJHVZtiBPYiPxTuLihLAUuMPf+iT74ndVlgv1A084Pt8npl+1aFLZFC5I28JZYhkL2djN2ILM2+fZvhC9zXAkmVJ5a2SolrsCIMVWUl3rk37zcNetvqT7/xtyjvTa0GkKr9e6lUFIxkMFk2FvHkD/lKqixDvhmkgWf2YOLUXJq1YVekOz1rqkgnmcyz7EqPAeYd8V3NMRaO0SntbfqQtNSHTOdZsvvbiepR5ov33AT+PYexsHALfHywKUF55jhuqKTv0rJkApcofPwqSPMRwyrHEJOmfcjBxuaKe4E92kIrgkPOB+rjmFC+hgpxsJyGLwgmcruckMiP29XGicNYa2txaMloyMW6En7BZUpd0kE2q+LWej7fhgseq/5nsYAGY45WHUecopL8DNyISzfUhyhlbKbB3eplIEnJ0/oi+9eqo4Y4snoZ3mRAgRFUP2lT6HuBQLjePOYNQJYo3N7CqVxcE61vK96ukb5WL8+PxLZRpj4vpQZC5eeyae/Z0OI/eBSHzmMh1JNzstUUERSmZMYeX6wd6nG1/rjp8COPXFPdMO3rLEWHZRQTpyYJJ4Tg5TKPs6Aesm/ZUgw417ckcKBVm28ZWqKR6Pojxgnp5bzz96YNlaWhjezHM+DOZot81deAyvfUOpeqdFebBMbYinzsgizclIV3Mxy6PRfq9EdwhZQl+lVB6sZ23qdS8VBSt/c+i7fwsO4T/9dvXT38lY6Titczj/zRP2je4q1yYLL0E3QuZ6Y4JF27Ca7/2PYlAfXo8jJzF7gr9e4224YEsFzuKSIT+O4DWwQQA39l5J0O0iG4bQW4/mnuQilsQ0mOjEZKvjWobxglH9aBT5kIL7YYw1XDMw5yaRUBc+SQ3RuzvHupf82bobab86jJ/KS2ImSWzaCBjKm28ZrMZBZaLqDkbvyEjYj2kWl8H4G+00ORSK+0um+d/FOtkEvwAQMcxSUeMmq1LiV5UU6E3MygAlbyS1XRiNzyHdWKF6+wyy9obkU/tqWyUtx7yP55OFXi8GMDrjAk36Ums88AKUsPTPKmxuSXgsnrfMr+e1YY/ILf7zeg7VWeZimzEGo1M1rquQqDkPsbBG9DvrPrdE+MP1A+Ml9qfnaQ1BzpCvazdzNqEzJoY4GRd08c9O7N0u+amUyOTTXdhc6Z5WiAc1lljrbneRGo+Q3Va1MDtPV4eb9hs+50tsDQ45+q5O5xBGNPXoNrR5QEE+Am33x8LFVJWD61V1jL5N+QEM84hZuCY3cBQAJAgyzO4pDeTMbTzGjTxbTylECNMwdKJnSkHZndjRR2yRzqHrsj9Hdjvaxd64hFg+Z5wReWG5JUQRHazQ2u9braBit93juqqjkvzKhL601HlrDyQhtbn8RZB9Ngtr3HAL8KpzDj0s125OskzkMoc3SqwpbTH1Fjc1XbEWpxzOWoGv6OLuNbCH+RDzMgw4Nmpn9HN4fyEnvgG6F3SAzGSj1usIiGNn7Wmck5lFtfA01V161VcvSj9nsga0ruE7TrfHBU9UjKwrcisNrG2r59zK3L2iAP90EVxtRy0HVIyuUfcbV+bDqQRXKe8Z5Tn1cDTFX6aiv4qrHVCzTdJGh/mAFdZsgHS3kalP1mIrEuXoSR8k/WOjfwBXLVKsV9ULVCIiJUVpDVV7jcwlAcvqRNiIUwTVjJFNd8fVKarBQmp1fxqmaaWgaV88TmzpqCBFD13iVCrobj0/NckrWz9OAHdu+9DxyN0r79dOQHqnysT8zseG/qgdUONii96Y8U2RArVGz4uLQATanxxuom1xlt0z9dTozSbduaMcVtbjVDFe8N7HjyzjUYS0uLy7B5ufVsdNI98vsgC4HbPBsK99L+jn9+vlTci077/QtH+N3UcGX3lmmIT5X2GVsDOl/VPDFhZZxOqIzwe+eMOnpvH4Rg24Vo8M3YXjhpuoBFQ/1e02T5zaUWlY9HjucNW/W6szthOOKz0TDXdVjsYOLcdEUGb2qx2IFbMRIbKjGVQ/GEk6ioVberh59GWkcsUuOM9S8rhoebCi915p0nqR5SQKiViu7Xy1UDfj0n28iPqRvdTQiPsywOj5rXEcN0YjjQxNKWMfzGtMrlZwQ73/twzM/ATTcyuTB+FE9w4Wgr0ukp996tdUwkj5187/Wch8STeklq7TqkdgBEjd6HFEO6xgsCCiDY4wWUQ3P2048v00m7aoHwfyEor5w+RdT4tdiVEb9NWQYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmFqxn8DSE7i3kujNwAAAABJRU5ErkJggg==">
+	<div class="desc">
+	   <a href="puma.html" onclick="myFunction()"> PUMA </a></div>
+   </div>   
+	  
+</div>
+</header>
+ 
+<video id="videoBG" poster="mposter.PNG" autoplay muted loop play-inline>
+   <source src="Shoes by 2GO - Theatrical Ad Film _ Commercial.mp4" type="video/mp4"> 
+
+ <script>
+	document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+function myFunction() {
+  console.log("Clicked brand!");
+}
+ </script>
+</body>
+
+</html>

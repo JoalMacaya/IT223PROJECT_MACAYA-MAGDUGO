@@ -1,0 +1,532 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title  id="pageTitle"> NEW BALANCE</title>
+ 
+ <style>
+	* {
+	   box-sizing: border-box;
+   }
+   
+
+   
+   body {
+	   margin: 0;
+	   padding:0;
+	   background-color: #fff;
+
+   }
+   
+	
+   .main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: rgb(236, 83, 83);
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid rgb(236, 83, 83);
+	 color: rgb(236, 83, 83);
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid rgb(236, 83, 83);
+	 
+ }
+
+ .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 160px;
+  float: right;
+  justify-content: space-between;
+}
+
+.navbar-toggle span {
+  display: flex;
+  width: 25px;
+  height: 3px;
+  background-color: #c11111;
+  margin-bottom: 5px;
+}
+ 
+ @media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    float: right;
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(2),
+  .navbar-toggle.active span:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(1),
+  .navbar-toggle.active span:nth-child(4) {
+    opacity: 0;
+  }
+
+  .main-nav.active {
+    display: inline-block;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    align-items: center;
+  }
+
+  .main-nav.active li {
+    margin: 10px 0;
+  }
+  .footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+ 
+ 
+	
+   .row {
+	   margin: auto;
+	   overflow: auto;
+	   background-color: black;
+	   padding: 10px;
+   }
+
+   .container {
+	   max-width: 1200px;
+	   margin: auto;
+	   overflow: auto;	
+	   
+   }
+	.gallery {
+	   margin: 5px;
+	   border: 1px solid black;
+	   float: left;
+	   width: 390px;
+	   position: relative;
+	   background-color: black;
+	}
+	
+	.gallery:hover {
+	   border: 1px solid rgb(236, 83, 83);
+	}
+   
+	.gallery img {
+	   width: 100%;
+	   height: auto;
+	}
+	
+	.desc {
+	   padding: 15px;
+	   text-align: center;
+	   color:white;
+	}
+   
+	.desc a {
+	   color:black;
+	}
+   
+	.btn-container {
+	text-align: right;
+}
+
+#btn-one {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	background-color: black;
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.btn-two {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#btn-one {
+	margin-right: 10px;
+}
+
+.btn-two {
+	margin-right: 0;
+}
+
+#btn-one:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+
+   .btn-two:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+
+   .footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+
+   
+   .image {
+  float: left;
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+#pageTitle i {
+    color: #FF0000;
+    margin-right: 5px; 
+  }
+
+p {
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+}
+
+</style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row">
+	<img src="logo.jpg" class="image">
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="newbalance.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	 <li> <a href="contact-us.html"> CONTACT US </a></li>
+	 <li><a href="item.html">MY CART</a></li>
+	</ul>
+   
+
+  <div class="navbar-toggle">
+	<span></span>
+	<span></span>
+	<span></span>
+  </div>
+</div>
+ 
+ <div class="container"> 
+   
+	<div class="container"> 
+		<div class="gallery"> 
+			<img id="myImage1" src="https://nb.scene7.com/is/image/NB/bb480lng_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+			<div class="desc"> 480 </div>
+			<p>₱4,500</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('480', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('480', 5000, 'https://nb.scene7.com/is/image/NB/bb480lng_nb_02_i?$pdpflexf2$&wid=440&hei=440')">ADD TO CART</a>
+		</div>
+		  
+		<div class="gallery"> 
+			<img id="myImage2" src="https://nb.scene7.com/is/image/NB/ml574evb_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+			<div class="desc"> 547 CORE </div>
+			<p>₱5,800</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('547 CORE', 5800)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('547 CORE', 5800, 'https://nb.scene7.com/is/image/NB/ml574evb_nb_02_i?$pdpflexf2$&wid=440&hei=440')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage3" src="https://nb.scene7.com/is/image/NB/m108012n_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+			<div class="desc"> FRESH FOAM X 1080v12 </div>
+			<p>₱6,700</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('FRESH FOAM X 1080v12', 6700)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('FRESH FOAM X 1080v12', 6700, 'https://nb.scene7.com/is/image/NB/m108012n_nb_02_i?$pdpflexf2$&wid=440&hei=440')">ADD TO CART</a>
+		</div>
+		  
+		<div class="gallery"> 
+			<img id="myImage4" src="https://s3.gsxtr.com/i/p/new-balance-993-core-made-in-usa-grey-367549-1080s-1.jpg">
+			<div class="desc"> 993 CORE </div>
+			<p>₱4,800</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('993 CORE', 4800)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('993 CORE', 4800, 'https://s3.gsxtr.com/i/p/new-balance-993-core-made-in-usa-grey-367549-1080s-1.jpg')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage5" src="https://nb.scene7.com/is/image/NB/mw928wt3_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+			<div class="desc"> 928v3 </div>
+			<p>₱6,300</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('928v3', 6300)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('928v3', 6300, 'https://nb.scene7.com/is/image/NB/mw928wt3_nb_02_i?$pdpflexf2$&wid=440&hei=440')">ADD TO CART</a>
+		</div>
+		  
+		<div class="gallery"> 
+			<img id="myImage6" src="https://nb.scene7.com/is/image/NB/bb550lsc_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+			<div class="desc"> 550 </div>
+			<p>₱7,500</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('550', 7500)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('550', 7500, 'https://nb.scene7.com/is/image/NB/bb550lsc_nb_02_i?$pdpflexf2$&wid=440&hei=440')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage7" src="https://nb.scene7.com/is/image/NB/m990gl6_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600">
+			<div class="desc"> 990 </div>
+			<p>₱5,400</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('990', 5400)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('990', 5400, 'https://nb.scene7.com/is/image/NB/m990gl6_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage8" src="https://nb.scene7.com/is/image/NB/m1540bk3_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+			<div class="desc"> 1540v3 </div>
+			<p>₱6,000</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('1540v3', 6000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('1540v3', 6000, 'https://nb.scene7.com/is/image/NB/m1540bk3_nb_02_i?$pdpflexf2$&wid=440&hei=440')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage9" src="https://nb.scene7.com/is/image/NB/mmorch4_nb_02_i?$pdpflexf2$&wid=440&hei=440">
+			<div class="desc"> FRESH X MORE v4 </div>
+			<p>₱4,500</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('FRESH X MORE v4', 4500)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('FRESH X MORE v4', 4500, 'https://nb.scene7.com/is/image/NB/mmorch4_nb_02_i?$pdpflexf2$&wid=440&hei=440')">ADD TO CART</a>
+		</div>
+		</div>   
+	   
+ </div>
+ </header>
+ <script>
+	function buyOrCancel(productName, price, imageUrl) {
+            var confirmation = confirm("Are you sure you want to proceed with the purchase?");
+            if (confirmation) {
+                alert("Buying success! Product: " + productName + ", Price: " + price);
+            } else {
+                alert("Purchase canceled.");
+            }
+        }
+		function addToCart(productName, price, imageUrl) {
+    var confirmation = confirm("Are you sure you want to add this item to the cart?");
+    if (confirmation) {
+        // Perform the necessary actions to add the item to the cart
+        alert("Item added to the cart successfully!");
+
+        var cartItem = { productName: productName, price: price, imageUrl: imageUrl };
+        var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        cartItems.push(cartItem);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    } else {
+        // Handle the cancellation or any other logic you want
+        alert("Add to Cart cancelled.");
+    }
+}
+
+var image = document.getElementById('myImage1');
+image.setAttribute('data-original-src', 'https://nb.scene7.com/is/image/NB/bb480lng_nb_02_i?$pdpflexf2$&wid=440&hei=440');
+image.setAttribute('data-hover-src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Z4HU5aWTZhhlZGA0HuuTpAE217DEhJ9noQ&usqp=CAU');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage2');
+image.setAttribute('data-original-src', 'https://nb.scene7.com/is/image/NB/mroavgn_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440');
+image.setAttribute('data-hover-src', 'https://nb.scene7.com/is/image/NB/mroavgn_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440	');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage3');
+image.setAttribute('data-original-src', 'https://nb.scene7.com/is/image/NB/m108012n_nb_02_i?$pdpflexf2$&wid=440&hei=440');
+image.setAttribute('data-hover-src', 'https://nb.scene7.com/is/image/NB/m108012n_nb_04_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage4');
+image.setAttribute('data-original-src', 'https://s3.gsxtr.com/i/p/new-balance-993-core-made-in-usa-grey-367549-1080s-1.jpg');
+image.setAttribute('data-hover-src', 'https://nb.scene7.com/is/image/NB/wr993gl_nb_04_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage5');
+image.setAttribute('data-original-src', 'https://nb.scene7.com/is/image/NB/mw928wt3_nb_02_i?$pdpflexf2$&wid=440&hei=440');
+image.setAttribute('data-hover-src', 'https://nb.scene7.com/is/image/NB/mw928wt3_nb_04_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage6');
+image.setAttribute('data-original-src', 'https://nb.scene7.com/is/image/NB/bb550lsc_nb_02_i?$pdpflexf2$&wid=440&hei=440');
+image.setAttribute('data-hover-src', 'https://nb.scene7.com/is/image/NB/bb550lsc_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage7');
+image.setAttribute('data-original-src', 'https://nb.scene7.com/is/image/NB/m990gl6_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600');
+image.setAttribute('data-hover-src', 'https://nb.scene7.com/is/image/NB/m990gl6_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage8');
+image.setAttribute('data-original-src', 'https://nb.scene7.com/is/image/NB/m1540bk3_nb_02_i?$pdpflexf2$&wid=440&hei=440');
+image.setAttribute('data-hover-src', 'https://nb.scene7.com/is/image/NB/m1540bk3_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage9');
+image.setAttribute('data-original-src', 'https://nb.scene7.com/is/image/NB/mmorch4_nb_02_i?$pdpflexf2$&wid=440&hei=440');
+image.setAttribute('data-hover-src', 'https://nb.scene7.com/is/image/NB/mmorch4_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+	document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+
+ 
+
+</script>
+ </body>
+ <footer>
+	<div class="footer">
+	<div class="row">
+	<a href="https://www.facebook.com/gilluther.magdugo.7/"><i class="fa fa-facebook"></i></a>
+	<a href="https://www.instagram.com/joal_macs/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR2W3TcAWx3iOT6OZfmHhKasAoQ3hCk2VZc2sTFjCxE2pzHNaU-keFsgzZ4"><i class="fa fa-instagram"></i></a>
+	<a href="https://twitter.com/kingluthluth?t=QHGNn7Vep193tbEO8KTHFQ&s=09&fbclid=IwAR3TmUnkp1Ig4uYi4MrDhiLlvn1JPH0zNQYW_N75F7GduuSyZGtYGMJXV9M"><i class="fa fa-twitter"></i></a>
+	</div>
+	
+	<div class="row">
+	SHOELAB Copyright © 2023 Shoelab - All rights reserved || Designed By: Joal and Luther 
+	</div>
+	</div>
+	</footer>
+</html>

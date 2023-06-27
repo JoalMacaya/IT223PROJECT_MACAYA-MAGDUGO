@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+ <title> Limited Edited: New Balance </title>
+ 
+ <style>
+	* {
+	   box-sizing: border-box;
+   }
+   
+   
+   body {
+	margin: 0;
+	padding:0;
+}
+
+	
+.main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: rgb(236, 83, 83);
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid rgb(236, 83, 83);
+	 color: rgb(236, 83, 83);
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid rgb(236, 83, 83);
+	 
+ }
+
+ .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 160px;
+  float: right;
+}
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #c11111;
+  margin-bottom: 5px;
+}
+ 
+ @media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    float: right;
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(2),
+  .navbar-toggle.active span:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(1),
+  .navbar-toggle.active span:nth-child(4) {
+    opacity: 0;
+  }
+
+  .main-nav.active {
+    display: inline-block;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    align-items: center;
+  }
+
+  .main-nav.active li {
+    margin: 10px 0;
+  }
+  .footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+ 
+   h1{
+	color:rgb(249, 31, 7);
+	font-family: sans-serif;
+   }
+	
+   .row {
+	   margin: auto;
+	   overflow: auto;
+	   background-color: black;
+	   padding: 10px;
+   }
+   
+   
+   .container {
+	   max-width: 1200px;
+	   margin: auto;
+	   overflow: auto;	
+	   
+   }
+	.gallery {
+	   margin: 5px;
+	   border: 1px solid black;
+	   float: left;
+	   width: 390px;
+	   position: relative;
+	   background-color: black;
+	}
+	
+	.gallery:hover {
+	   border: 1px solid rgb(236, 83, 83);
+	}
+   
+	.gallery img {
+	   width: 100%;
+	   height: auto;
+	}
+	
+	.desc {
+	   padding: 15px;
+	   text-align: center;
+	   color:gold;
+	}
+   
+	#btn-one {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	background-color: black;
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.btn-two {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#btn-one {
+	margin-right: 10px;
+}
+
+.btn-two {
+	margin-right: 0;
+}
+
+#btn-one:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+
+   .btn-two:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+   .footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+p {
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+}
+.title {
+	text-align: center;
+}
+
+.image {
+  float: left;
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+.category-button {
+   background-color: #000000;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   margin: 5px;
+   cursor: pointer;
+ }
+
+ .category-button:hover {
+   background-color: #ef0909;
+   transition: background-color 0.3s ease-in-out;
+ }
+
+ .category-buttons {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ p {
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+}
+
+   
+	</style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+	<img src="logo.jpg" class="image">
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="Lnew.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	 <li> <a href="contact-us.html"> CONTACT US </a></li>
+	 <li><a href="item.html">MY CART</a></li>
+	</ul>
+   
+  
+  <div class="navbar-toggle">
+	<span></span>
+	<span></span>
+	<span></span>
+  </div>
+</div>
+  <div class="title">
+	<h1>ALL LIMITED EDITION SNEAKERS</h1>
+  </div>
+ 
+ <div class="container"> 
+	<div class="category-buttons">
+		<a href="Lnew.html" class="category-button">New Balance</a>
+		<a href="Nnew.html" class="category-button">Nike</a>
+		<a href="Lvans.html" class="category-button">Vans</a>
+		<a href="Lconv.html" class="category-button">Converse</a>
+		<a href="Ladi.html" class="category-button">Adidas</a>
+		<a href="Lpuma.html" class="category-button">Puma</a>
+	  </div>
+   
+   <div class="gallery"> 
+	 <img id="myImage1" src="https://www.menswearstyle.co.uk/content/blogs/0b54106e-b8ab-4855-a183-6bb9bf232fb9_blog_ln_.jpg">
+     <div class="desc"> RONNIE FIEG X NEW BALANCE 1600 DAYTONA, 2013  </div>
+	 <p>₱5,800</p>
+	 <button id="btn-one" onclick="buyOrCancel('RONNIE FIEG X NEW BALANCE 1600 DAYTONA, 2013 ', 5800)">BUY NOW</button>
+	 <a href="item.html" class="btn-two" onclick="addToCart(' RONNIE FIEG X NEW BALANCE 1600 DAYTONA, 2013', 5800, 'https://www.menswearstyle.co.uk/content/blogs/0b54106e-b8ab-4855-a183-6bb9bf232fb9_blog_ln_.jpgs')">ADD TO CART</a>
+	</div>
+	<div class="gallery"> 
+	 <img id="myImage2" src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2013%2F11%2Fronnie-fieg-x-new-balance-cm1600-daytona-1.jpg?q=90&w=1400&cbr=1&fit=max">
+     <div class="desc"> RONNIE FIEG X NEW BALANCE 1600 DAYTONA, 2013 </div>
+	 <p>₱5,650</p>
+	 <button id="btn-one" onclick="buyOrCancel('RONNIE FIEG X NEW BALANCE 1600 DAYTONA, 2013', 5650)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('RONNIE FIEG X NEW BALANCE 1600 DAYTONA, 2013', 5650, 'https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2013%2F11%2Fronnie-fieg-x-new-balance-cm1600-daytona-1.jpg?q=90&w=1400&cbr=1&fit=max')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage3" src="https://www.frenchkicks.fr/wp-content/uploads/2014/09/ob_f211fc_img-1352.jpg">
+     <div class="desc"> RONNIE FIEG Starcow x New Balance 1500 Pack, 2014 </div>
+	 <p>₱5,800</p>
+	 <button id="btn-one" onclick="buyOrCancel('RONNIE FIEG Starcow x New Balance 1500 Pack, 2014', 5800)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('RONNIE FIEG Starcow x New Balance 1500 Pack, 2014', 5000, 'https://www.frenchkicks.fr/wp-content/uploads/2014/09/ob_f211fc_img-1352.jpg')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage4" src="https://sneakernews.com/wp-content/uploads/2013/12/new-balance-m576-three-peaks-pack-03.jpg">
+     <div class="desc"> NEW BALANCE 576 THREE PEAKS CHALLENGE PACK, 2013 </div>
+	 <p>₱8,800</p>
+	 <button id="btn-one" onclick="buyOrCancel('NEW BALANCE 576 THREE PEAKS CHALLENGE PACK, 2013', 8800)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('NEW BALANCE 576 THREE PEAKS CHALLENGE PACK, 2013', 8800, 'https://sneakernews.com/wp-content/uploads/2013/12/new-balance-m576-three-peaks-pack-03.jpg')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage5" src="https://sneakernews.com/wp-content/uploads/2013/08/new-balance-1500-norse-projects-04.jpg">
+     <div class="desc"> NORSE PROJECTS X NEW BALANCE 1500 DANISH WEATHER PACK, 2013 </div>
+	 <p>₱5,230</p>
+	 <button id="btn-one" onclick="buyOrCancel('NORSE PROJECTS X NEW BALANCE 1500 DANISH WEATHER PACK, 2013', 5230)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('NORSE PROJECTS X NEW BALANCE 1500 DANISH WEATHER PACK, 2013', 5230, 'https://sneakernews.com/wp-content/uploads/2013/08/new-balance-1500-norse-projects-04.jpg')">ADD TO CART</a>
+	</div>
+  <div class="gallery"> 
+	 <img id="myImage6" src="https://i.ebayimg.com/images/g/TWwAAOSwudJiEuOH/s-l1600.jpg">
+     <div class="desc"> NICE KICKS X NEW BALANCE 1500, 2011  </div>
+	 <p>₱5,800</p>
+	 <button id="btn-one" onclick="buyOrCancel('NICE KICKS X NEW BALANCE 1500, 2011', 5800)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('NICE KICKS X NEW BALANCE 1500, 2011', 5800, 'https://i.ebayimg.com/images/g/TWwAAOSwudJiEuOH/s-l1600.jpg')">ADD TO CART</a>
+	</div>
+	<div class="gallery"> 
+		<img id="myImage7" src="https://images.solecollector.com/complex/image/upload/qreub6d47n6bbfdo1dsp.jpg">
+		<div class="desc"> STONE ISLAND X NEW BALANCE 577, 2013 </div>
+		<p>₱4,800</p>
+		<button id="btn-one" onclick="buyOrCancel('STONE ISLAND X NEW BALANCE 577, 2013', 4800)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('STONE ISLAND X NEW BALANCE 577, 2013', 4800, 'https://images.solecollector.com/complex/image/upload/qreub6d47n6bbfdo1dsp.jpg')">ADD TO CART</a>
+	</div>
+	<div class="gallery"> 
+		<img id="myImage8" src="https://footwearnews.com/wp-content/uploads/2016/02/new-balance-concepts-night-trail-5.jpg?w=1024&h=683&crop=1">
+		<div class="desc"> NIGHT TRAIL </div>
+		<p>₱2,600</p>
+		<button id="btn-one" onclick="buyOrCancel('NIGHT TRAIL', 2600)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('NIGHT TRAIL', 2600, 'https://footwearnews.com/wp-content/uploads/2016/02/new-balance-concepts-night-trail-5.jpg?w=1024&h=683&crop=1')">ADD TO CART</a>
+	   </div>
+	<div class="gallery"> 
+		<img id="myImage9" src="https://sneakernews.com/wp-content/uploads/2016/01/grenson-new-balance-576-brogue-1.jpg">
+		<div class="desc"> GRENSON X NEW BALANCE 579  </div>
+		<p>₱5,800</p>
+		<button id="btn-one" onclick="buyOrCancel(' GRENSON X NEW BALANCE 579', 5800)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart(' GRENSON X NEW BALANCE 579', 5800, 'https://sneakernews.com/wp-content/uploads/2016/01/grenson-new-balance-576-brogue-1.jpg')">ADD TO CART</a>
+	   </div> 
+	   
+	   
+		
+	   </div>   
+	   
+ </div>
+ </header>
+
+ <script>
+	function buyOrCancel(productName, price, imageUrl) {
+            var confirmation = confirm("Are you sure you want to proceed with the purchase?");
+            if (confirmation) {
+                alert("Buying success! Product: " + productName + ", Price: " + price);
+            } else {
+                alert("Purchase canceled.");
+            }
+        }
+		function addToCart(productName, price, imageUrl) {
+    var confirmation = confirm("Are you sure you want to add this item to the cart?");
+    if (confirmation) {
+        // Perform the necessary actions to add the item to the cart
+        alert("Item added to the cart successfully!");
+
+        var cartItem = { productName: productName, price: price, imageUrl: imageUrl };
+        var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        cartItems.push(cartItem);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    } else {
+        // Handle the cancellation or any other logic you want
+        alert("Add to Cart cancelled.");
+    }
+}
+	var image = document.getElementById('myImage1');
+image.setAttribute('data-original-src', 'https://www.menswearstyle.co.uk/content/blogs/0b54106e-b8ab-4855-a183-6bb9bf232fb9_blog_ln_.jpg');
+image.setAttribute('data-hover-src', 'https://www.theillest.pl/wp-content/uploads/2015/02/new-balance-spring-summer-2015-577-made-in-uk-04.jpg');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage2');
+image.setAttribute('data-original-src', 'https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2013%2F11%2Fronnie-fieg-x-new-balance-cm1600-daytona-1.jpg?q=90&w=1400&cbr=1&fit=max');
+image.setAttribute('data-hover-src', 'https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2013%2F11%2Fronnie-fieg-x-new-balance-cm1600-daytona-2.jpg?q=90&w=1400&cbr=1&fit=max');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage3');
+image.setAttribute('data-original-src', 'https://www.frenchkicks.fr/wp-content/uploads/2014/09/ob_f211fc_img-1352.jpg');
+image.setAttribute('data-hover-src', 'https://www.frenchkicks.fr/wp-content/uploads/2014/09/ob_0a45b8_img-1322.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage4');
+image.setAttribute('data-original-src', 'https://sneakernews.com/wp-content/uploads/2013/12/new-balance-m576-three-peaks-pack-03.jpg');
+image.setAttribute('data-hover-src', 'https://sneakernews.com/wp-content/uploads/2013/12/new-balance-m576-three-peaks-pack-02.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage5');
+image.setAttribute('data-original-src', 'https://sneakernews.com/wp-content/uploads/2013/08/new-balance-1500-norse-projects-04.jpg');
+image.setAttribute('data-hover-src', 'https://sneakernews.com/wp-content/uploads/2013/08/new-balance-1500-norse-projects-05.jpg');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage6');
+image.setAttribute('data-original-src', 'https://i.ebayimg.com/images/g/TWwAAOSwudJiEuOH/s-l1600.jpg');
+image.setAttribute('data-hover-src', 'https://i.ebayimg.com/images/g/7CMAAOSwON9iEuON/s-l1600.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage7');
+image.setAttribute('data-original-src', 'https://images.solecollector.com/complex/image/upload/qreub6d47n6bbfdo1dsp.jpg');
+image.setAttribute('data-hover-src', 'https://images.solecollector.com/complex/image/upload/lwnsjzvajca8cmq5ybev.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage8');
+image.setAttribute('data-original-src', 'https://footwearnews.com/wp-content/uploads/2016/02/new-balance-concepts-night-trail-5.jpg?w=1024&h=683&crop=1');
+image.setAttribute('data-hover-src', 'https://footwearnews.com/wp-content/uploads/2016/02/new-balance-concepts-night-trail-1.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage9');
+image.setAttribute('data-original-src', 'https://sneakernews.com/wp-content/uploads/2016/01/grenson-new-balance-576-brogue-1.jpg');
+image.setAttribute('data-hover-src', 'https://sneakernews.com/wp-content/uploads/2016/01/grenson-new-balance-576-brogue-2.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+	document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+function myFunction() {
+  console.log("Clicked Buy now!");
+}
+		document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+
+ </script>
+ </body>
+ <footer>
+	<div class="footer">
+	<div class="row">
+	<a href="https://www.facebook.com/gilluther.magdugo.7/"><i class="fa fa-facebook"></i></a>
+	<a href="https://www.instagram.com/joal_macs/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR2W3TcAWx3iOT6OZfmHhKasAoQ3hCk2VZc2sTFjCxE2pzHNaU-keFsgzZ4"><i class="fa fa-instagram"></i></a>
+	<a href="https://twitter.com/kingluthluth?t=QHGNn7Vep193tbEO8KTHFQ&s=09&fbclid=IwAR3TmUnkp1Ig4uYi4MrDhiLlvn1JPH0zNQYW_N75F7GduuSyZGtYGMJXV9M"><i class="fa fa-twitter"></i></a>
+	</div>
+	
+	<div class="row">
+	SHOELAB Copyright © 2023 Shoelab - All rights reserved || Designed By: Joal and Luther 
+	</div>
+	</div>
+ </footer>
+</html>

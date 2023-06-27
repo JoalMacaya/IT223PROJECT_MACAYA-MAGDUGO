@@ -1,0 +1,538 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Index.css">
+ <title> ADIDAS </title>
+
+ <style>
+ * {
+	box-sizing: border-box;
+}
+
+#videoBG {
+	 position: fixed;
+	 z-index: -1;	
+	 right: 0;
+	 bottom: 0;
+	 min-width: 100%;
+	 min-height: 100%;
+	 width: auto;
+	 height: auto;
+	 
+ }
+
+body {
+	margin: 0;
+	padding:0;
+}
+
+ 
+.main-nav {
+	 float: right;
+	 list-style: none;
+	 margin: 30px;
+
+	
+	 
+ }
+ 
+ .main-nav li {
+	 display: inline-block;	 
+ }
+ 
+ .main-nav li a {
+	 color: rgb(236, 83, 83);
+	 text-decoration: none;
+	 padding: 5px 20px;
+	 font-family: "Arial";
+	 font-size: 15px;
+	 
+ }
+ 
+ .main-nav li.active a {
+	 border: 1px solid rgb(236, 83, 83);
+	 color: rgb(236, 83, 83);
+ }
+ 
+ .main-nav li a:hover {
+	 border: 1px solid rgb(236, 83, 83);
+	 
+ }
+
+ .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 160px;
+  float: right;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #c11111;
+  margin-bottom: 5px;
+}
+ 
+ @media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    float: right;
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(2),
+  .navbar-toggle.active span:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(1),
+  .navbar-toggle.active span:nth-child(4) {
+    opacity: 0;
+  }
+
+  .main-nav.active {
+    display: inline-block;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    align-items: center;
+  }
+
+  .main-nav.active li {
+    margin: 10px 0;
+  }
+  .footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+ 
+ 
+ 
+ 
+.row {
+	margin: auto;
+	overflow: auto;
+	background-color: black;
+	padding: 10px;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	overflow: auto;	
+	
+}
+ .gallery {
+	margin: 5px;
+	border: 1px solid black;
+	float: left;
+	width: 390px;
+	position: relative;
+	background-color: black;
+ }
+ 
+ .gallery:hover {
+	border: 1px solid rgb(236, 83, 83);
+ }
+
+ .gallery img {
+	width: 100%;
+	height: auto;
+ }
+ 
+ .desc {
+	padding: 15px;
+	text-align: center;
+	color:white;
+ }
+
+ .desc a {
+	color:black;
+ }
+ #btn-one {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	background-color: black;
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.btn-two {
+	font-family: "arial";
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	color: rgb(95, 91, 91);
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#btn-one {
+	margin-right: 10px;
+}
+
+.btn-two {
+	margin-right: 0;
+}
+
+#btn-one:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+
+   .btn-two:hover {
+	   background-color: rgb(236, 83, 83) ;
+   }
+.footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+.image {
+  float: left;
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+p {
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+}
+
+
+
+
+ </style>
+ </head>
+ <body> 
+ <header> 
+  <div class="row"> 
+	<img src="logo.jpg" class="image">
+   
+	<ul class="main-nav"> 
+	 <li> <a href="HOME.html"> HOME </a></li>
+	 <li class="active"> <a href="adidas.html"> PRODUCTS </a></li>
+	 <li> <a href="about.html"> ABOUT </a></li>
+	 <li> <a href="contact-us.html"> CONTACT US </a></li>
+	 <li><a href="item.html">MY CART</a></li>
+	</ul>
+   
+  
+  <div class="navbar-toggle">
+	<span></span>
+	<span></span>
+	<span></span>
+  </div>
+</div>
+  <div class="container"> 
+   
+	<div class="container"> 
+		<div class="gallery"> 
+			<img id="myImage1" src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/94c39d2867404df293a7af5b0105eef2_9366/Forum_Low_CL_x_Indigo_Herz_Shoes_White_IE1855_HM1.jpg">
+			<div class="desc"> FORUM LOW CL X INDIGO HERZ SHOES </div>
+			<p>₱5,000</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('FORUM LOW CL X INDIGO HERZ SHOES', 5000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('FORUM LOW CL X INDIGO HERZ SHOES', 5000, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/94c39d2867404df293a7af5b0105eef2_9366/Forum_Low_CL_x_Indigo_Herz_Shoes_White_IE1855_HM1.jpg')">ADD TO CART</a>
+		</div>
+		  
+		<div class="gallery"> 
+			<img id="myImage2" src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8619686322bb40e08f6baf5b010565e3_9366/Superstar_x_Indigo_Herz_Shoes_Black_IE1842_HM1.jpg">
+			<div class="desc"> SUPERSTAR X INDIGO HERZ SHOES </div>
+			<p>₱5,800</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('SUPERSTAR X INDIGO HERZ SHOES', 5800)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('SUPERSTAR X INDIGO HERZ SHOES', 5800, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8619686322bb40e08f6baf5b010565e3_9366/Superstar_x_Indigo_Herz_Shoes_Black_IE1842_HM1.jpg')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage3" src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c215531f8f749ecbaf3af5b0105ab45_9366/NMD_R1_x_Indigo_Herz_Shoes_Black_IE1844_HM1.jpg">
+			<div class="desc"> NMD_R1 X INDIGO HERZ SHOES </div>
+			<p>₱6,700</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('NMD_R1 X INDIGO HERZ SHOES', 6700)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('NMD_R1 X INDIGO HERZ SHOES', 6700, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c215531f8f749ecbaf3af5b0105ab45_9366/NMD_R1_x_Indigo_Herz_Shoes_Black_IE1844_HM1.jpg')">ADD TO CART</a>
+		</div>
+		  
+		<div class="gallery"> 
+			<img id="myImage4" src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/76625fa9c0a04307b754afaa00b256df_9366/Ultraboost_Light_White_GY9359_04_standard.jpg">
+			<div class="desc"> ULTRABOOST LIGHT </div>
+			<p>₱4,800</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('ULTRABOOST LIGHT', 4800)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('ULTRABOOST LIGHT', 4800, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/76625fa9c0a04307b754afaa00b256df_9366/Ultraboost_Light_White_GY9359_04_standard.jpg')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage5" src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/922be72f646b42d2a88aafaa00badc80_9366/Campus_00s_Shoes_Beige_HQ8711_04_standard.jpg">
+			<div class="desc"> CAMPUS 00S SHOESS </div>
+			<p>₱6,300</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('CAMPUS 00S SHOESS', 6300)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('CAMPUS 00S SHOESS', 6300, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/922be72f646b42d2a88aafaa00badc80_9366/Campus_00s_Shoes_Beige_HQ8711_04_standard.jpg')">ADD TO CART</a>
+		</div>
+		  
+		<div class="gallery"> 
+			<img id="myImage6" src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1704c7117c34d0a9735af460143aa94_9366/Ultra_adidas_4D_Shoes_Black_HP9737_02_standard.jpg">
+			<div class="desc">  ULTRA ADIDAS 4D SHOES </div>
+			<p>7,500</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel(' ULTRA ADIDAS 4D SHOES', 7500)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('ULTRA ADIDAS 4D SHOES', 7500, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1704c7117c34d0a9735af460143aa94_9366/Ultra_adidas_4D_Shoes_Black_HP9737_02_standard.jpg')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage7" src="https://nb.scene7.com/is/image/NB/m990gl6_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600">
+			<div class="desc">  DURAMO 10 SHOES </div>
+			<p>₱5,400</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel(' DURAMO 10 SHOES', 5400)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart(' DURAMO 10 SHOES', 5400, 'https://nb.scene7.com/is/image/NB/m990gl6_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage8" src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5e09a69c1552451498f5af16000c295f_9366/D_Rose_Son_of_Chi_II_Shoes_Brown_HQ1009_02_standard_hover.jpg">
+			<div class="desc"> D ROSE SON OF CHI II SHOES </div>
+			<p>₱6,000</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('D ROSE SON OF CHI II SHOES', 6000)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('D ROSE SON OF CHI II SHOES', 6000, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5e09a69c1552451498f5af16000c295f_9366/D_Rose_Son_of_Chi_II_Shoes_Brown_HQ1009_02_standard_hover.jpg')">ADD TO CART</a>
+		</div>
+
+		<div class="gallery"> 
+			<img id="myImage9" src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5ea171781a7e42c1bd30af9c01085eaf_9366/Ultraboost_Light_Shoes_Black_HP9204_02_standard_hover.jpg">
+			<div class="desc"> ULTRABOOST LIGHT SHOES </div>
+			<p>₱4,500</p>
+			<a href="thankyou.html" button id="btn-one" onclick="buyOrCancel('ULTRABOOST LIGHT SHOES', 4500)">BUY NOW</button>
+			<a href="item.html" class="btn-two" onclick="addToCart('ULTRABOOST LIGHT SHOES', 4500, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5ea171781a7e42c1bd30af9c01085eaf_9366/Ultraboost_Light_Shoes_Black_HP9204_02_standard_hover.jpg')">ADD TO CART</a>
+		</div>
+		</div> 
+ 
+ </div>
+ </header>
+ <script>
+	function buyOrCancel(productName, price, imageUrl) {
+            var confirmation = confirm("Are you sure you want to proceed with the purchase?");
+            if (confirmation) {
+                alert("Buying success! Product: " + productName + ", Price: " + price);
+            } else {
+                alert("Purchase cancelled.");
+            }
+        }
+
+		function addToCart(productName, price, imageUrl) {
+    var confirmation = confirm("Are you sure you want to add this item to the cart?");
+    if (confirmation) {
+        // Perform the necessary actions to add the item to the cart
+        alert("Item added to the cart successfully!");
+
+        var cartItem = { productName: productName, price: price, imageUrl: imageUrl };
+        var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        cartItems.push(cartItem);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    } else {
+        // Handle the cancellation or any other logic you want
+        alert("Add to Cart canceled.");
+    }
+}
+
+	var image = document.getElementById('myImage1');
+image.setAttribute('data-original-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/94c39d2867404df293a7af5b0105eef2_9366/Forum_Low_CL_x_Indigo_Herz_Shoes_White_IE1855_HM1.jpg');
+image.setAttribute('data-hover-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d11f27988d814074bb53afa80101af01_9366/Forum_Low_CL_x_Indigo_Herz_Shoes_White_IE1855_HM3_hover.jpg');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage2');
+image.setAttribute('data-original-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8619686322bb40e08f6baf5b010565e3_9366/Superstar_x_Indigo_Herz_Shoes_Black_IE1842_HM1.jpg');
+image.setAttribute('data-hover-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7a8d66dc3e9b4a29a46eafab00e5cfb1_9366/Superstar_x_Indigo_Herz_Shoes_Black_IE1842_HM3_hover.jpg');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage3');
+image.setAttribute('data-original-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c215531f8f749ecbaf3af5b0105ab45_9366/NMD_R1_x_Indigo_Herz_Shoes_Black_IE1844_HM1.jpg');
+image.setAttribute('data-hover-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4a39a0f8ed064424824cafa8010181f1_9366/NMD_R1_x_Indigo_Herz_Shoes_Black_IE1844_HM3_hover.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage4');
+image.setAttribute('data-original-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/76625fa9c0a04307b754afaa00b256df_9366/Ultraboost_Light_White_GY9359_04_standard.jpg');
+image.setAttribute('data-hover-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fe8e53ff70d94d8b8c4cafaa00b2410d_9366/Ultraboost_Light_White_GY9359_02_standard_hover.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage5');
+image.setAttribute('data-original-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5ea171781a7e42c1bd30af9c01085eaf_9366/Ultraboost_Light_Shoes_Black_HP9204_02_standard_hover.jpg');
+image.setAttribute('data-hover-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5171e557c9b849d58c41af9c0143c277_9366/Ultraboost_Light_Shoes_Black_HQ8595_01_standard.jpg');
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage6');
+image.setAttribute('data-original-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/922be72f646b42d2a88aafaa00badc80_9366/Campus_00s_Shoes_Beige_HQ8711_04_standard.jpg');
+image.setAttribute('data-hover-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/336fc8d2c1e24242bb0bafaa00bacafc_9366/Campus_00s_Shoes_Beige_HQ8711_02_standard.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage7');
+image.setAttribute('data-original-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1704c7117c34d0a9735af460143aa94_9366/Ultra_adidas_4D_Shoes_Black_HP9737_02_standard.jpg');
+image.setAttribute('data-hover-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a45d016c257b4fa9aa8baf4601435841_9366/Ultra_adidas_4D_Shoes_Black_HP9737_03_standard.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage8');
+image.setAttribute('data-original-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/726a3c4c8ce3436db98daf8800aa749e_9366/Duramo_10_Shoes_Grey_HP2380_04_standard.jpg');
+image.setAttribute('data-hover-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/942633dc43374bc49c54af8800aa5c92_9366/Duramo_10_Shoes_Grey_HP2380_02_standard_hover.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+var image = document.getElementById('myImage9');
+image.setAttribute('data-original-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5e09a69c1552451498f5af16000c295f_9366/D_Rose_Son_of_Chi_II_Shoes_Brown_HQ1009_02_standard_hover.jpg');
+image.setAttribute('data-hover-src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/771368b1b85d4e53bfdcaf16000d111e_9366/D_Rose_Son_of_Chi_II_Shoes_Brown_HQ1009_04_standard.jpg');
+
+image.addEventListener('mouseover', function() {
+  this.src = this.getAttribute('data-hover-src');
+});
+
+image.addEventListener('mouseout', function() {
+  this.src = this.getAttribute('data-original-src');
+});
+
+	document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+function myFunction() {
+  console.log("Clicked Buy now!");
+}
+
+document.querySelector(".navbar-toggle").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector(".main-nav").classList.toggle("active");
+});
+ </script>
+ </body>
+ <footer>
+	<div class="footer">
+	<div class="row">
+	<a href="https://www.facebook.com/gilluther.magdugo.7/"><i class="fa fa-facebook"></i></a>
+	<a href="https://www.instagram.com/joal_macs/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR2W3TcAWx3iOT6OZfmHhKasAoQ3hCk2VZc2sTFjCxE2pzHNaU-keFsgzZ4"><i class="fa fa-instagram"></i></a>
+	<a href="https://twitter.com/kingluthluth?t=QHGNn7Vep193tbEO8KTHFQ&s=09&fbclid=IwAR3TmUnkp1Ig4uYi4MrDhiLlvn1JPH0zNQYW_N75F7GduuSyZGtYGMJXV9M"><i class="fa fa-twitter"></i></a>
+	</div>
+		
+	<div class="row">
+	SHOELAB Copyright © 2023 Shoelab - All rights reserved || Designed By: Joal and Luther 
+	</div>
+	</div>
+	</footer>
+</html>
